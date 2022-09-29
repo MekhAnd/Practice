@@ -35,7 +35,7 @@ So, here you can find:
 
 - **Pet projects here [Projects...](https://github.com/MekhAnd/Practice/tree/main/Websites)**
     - To-do with weather (complete) [JS, Node, MongoDB...](https://github.com/MekhAnd/Practice/tree/main/Websites/ToDo)
-    - Stopwatch (still in work) [JS, React, Node, PostgreSQL...](https://github.com/MekhAnd/Practice/tree/main/Websites/Blogpost)
+    - Blogpost with the small trade zone  (still in work) [JS, React, Node, PostgreSQL...](https://github.com/MekhAnd/Practice/tree/main/Websites/Blogpost)
 
 
 Wellcome!!
