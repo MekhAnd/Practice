@@ -1,0 +1,41 @@
+body{
+    
+    background-color: rgb(34, 50, 50);
+    color: aquamarine;
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    font-family: 'Dancing Script', cursive;
+
+    text-align: center;
+}
+h1{
+    padding: 0;
+    margin: 2% 0;
+}
+
+.container{
+    display: inline-flex;
+}
+.play-field{
+    padding: 2% ;
+    /*  */
+}
+#field01    {
+    width: 275px;
+    height: 275px;
+    background-image: url('../images/dice1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#field02{
+    width: 275px;
+    height: 275px;
+    background-image: url('../images/dice1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer{
+    font-size: 1rem;
+}
+

@@ -1,0 +1,4 @@
+.blog-editing-element{
+    display: flex;
+    flex-direction: column;
+}

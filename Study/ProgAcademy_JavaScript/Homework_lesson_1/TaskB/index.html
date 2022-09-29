@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Домашняя работа - УРОК 1</title>
+
+        
+    </head>
+    <body>
+        
+        <script>
+            
+            document.write("<p><b>" + "1) x+=y-x++*z" + "</b></br>");
+            var x = 6;
+            var y = 14;
+            var z = 4;
+         
+            var result = x+=(y-((x++)*z));
+
+            // 1. Операция - Постфиксный инкремент (x++) /приоритет 17
+            // 2. Операция - Умножение (*z) / приоритет 14
+            // 3. Операция - Вычитание (y-((x++)*z)) / приоритет 13
+            // 4. Операция - Присваивание (+=y) / 3
+
+            document.write("</br><hr>"+"result = " + result + "</br>"+"<hr>");
+            document.write("x = " + x + "</br>");
+            document.write("y = " + y + "</br>");
+            document.write("z = " + z + "</br>");
+            document.write("</p>");
+
+            document.write("<p><b>" + "2) z = --x - y * 5 " + "</b></br>");
+            x = 6;
+            y = 14;
+            z = 4;
+         
+            z = --x - y * 5 ;
+
+            // 1. Операция - Префиксный декремент (--x) / приоритет 16
+            // 2. Операция - Умножение (*5) / приоритет 14
+            // 3. Операция - Вычитание (x - y * 5) / приоритет 13
+            
+            document.write("</br><hr>"+"z = " + z + "</br>"+"</br><hr>");
+            document.write("x = " + x + "</br>");
+            document.write("y = " + y + "</br>");
+            
+            document.write("</p>");
+
+            document.write("<p><b>" + "3) y /= x + 5 % z" + "</b></br>");
+            x = 6;
+            y = 14;
+            z = 4;
+         
+            result =  y /= x + 5 % z;
+            
+            // 1. Операция - Остаток от деления (--x) / приоритет 14
+            // 2. Операция - Сложениее (x+5%z) / приоритет 13
+            // 3. Операция - Присваивание (y/=x) / приоритет 3
+            
+
+
+            document.write("</br><hr>"+"result = " + result + "</br>"+"<hr>");
+            document.write("x = " + x + "</br>");
+            document.write("y = " + y + "</br>");
+            document.write("z = " + z + "</br>");
+            document.write("</p>");
+
+            document.write("<p><b>" + "4) z - x++ + y * 5" + "</b></br>");
+            x = 6;
+            y = 14;
+            z = 4;
+         
+            result =   z - x++ + y * 5;
+
+            // 1. Операция - Постфиксный инкремент (x++) / приоритет 17
+            // 2. Операция - Умножение (*5) / приоритет 14
+            // 3. Операция - Сложениее (x+y) / приоритет 13
+            // 4. Операция - Вычитание (x+y) / приоритет 13
+
+            document.write("</br><hr>"+"result = " + result + "</br>"+"<hr>");
+            document.write("x = " + x + "</br>");
+            document.write("y = " + y + "</br>");
+            document.write("z = " + z + "</br>");
+            document.write("</p>");
+
+            document.write("<p><b>" + "5) x = y - x++ * z" + "</b></br>");
+            x = 6;
+            y = 14;
+            z = 4;
+         
+            result =    x = y - x++ * z;
+
+            // 1. Операция - Постфиксный инкремент (x++) / приоритет 17
+            // 2. Операция - Умножение (*z) / приоритет 14
+            // 3. Операция - Вычитание (y-) / приоритет 13
+            
+            document.write("</br><hr>"+"result = " + result + "</br>"+"<hr>");
+            document.write("x = " + x + "</br>");
+            document.write("y = " + y + "</br>");
+            document.write("z = " + z + "</br>");
+            document.write("</p>");
+
+
+        </script>
+    </body>
+</html>
+
+
+                        

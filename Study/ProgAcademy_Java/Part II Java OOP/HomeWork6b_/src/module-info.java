@@ -1,0 +1,2 @@
+module HomeWor6b {
+}

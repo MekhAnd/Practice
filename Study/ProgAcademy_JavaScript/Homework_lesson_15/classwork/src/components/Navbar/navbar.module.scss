@@ -1,0 +1,24 @@
+.menu{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.elements{
+    padding-left: 332px;
+    padding-right: 332px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.points{
+    color: #16A085;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+a, li{
+    text-decoration: none;
+    list-style: none;
+}
+ 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Task A</title>
+    <script>
+        debugger
+        function Human (name, age){
+            this.name = name;
+            this.age = age;
+        }
+
+        var ivan = new Human ("Ivan", 27);
+        var taras = new Human ("Taras", 22);
+        var sophia = new Human ("Sophia", 25);
+
+        // Варіант 1 - Array.sort();
+        var group = new Array();
+        group.push(ivan);
+        group.push(taras);
+        group.push(sophia);
+        
+        for(var i = 0 ; i<group.length; i++){
+            document.write("i=" + i + " ["+ group[i].name + "; " +  group[i].age + "]" + "<br>");
+        }
+        document.write("------------------------- <br>")
+        
+        group.sort((a,b)=>(a.age>b.age)? 1:-1);
+        
+        for(var i = 0 ; i<group.length; i++){
+            document.write("i=" + i + " ["+ group[i].name + "; " +  group[i].age + "]" + "<br>");
+        }
+        document.write("------------------------- <br>");
+        document.write("------------------------- <br><br>");
+
+        // Варіант 2 - всласна ф-ція
+        var group1 = new Array();
+        group1.push(taras);
+        group1.push(ivan);
+        group1.push(sophia);
+
+        function mySort(array) {
+            var tmp = new Human ("",0);
+            
+            for(var k = 1; k<array.length-1; k++){
+                 if (array[k].age>array[k+1].age) {
+                    tmp = array[k+1];
+                    array[k+1] = array [k];
+                    array[k] = tmp;
+                }
+            }
+        }
+
+        for(var i = 0 ; i<group1.length; i++){
+            document.write("i=" + i + " ["+ group1[i].name + "; " +  group1[i].age + "]" + "<br>");
+        }
+
+        mySort(group1);
+
+        document.write("------------------------- <br>");
+        for(var i = 0 ; i<group1.length; i++){
+            document.write("i=" + i + " ["+ group1[i].name + "; " +  group1[i].age + "]" + "<br>");
+        }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

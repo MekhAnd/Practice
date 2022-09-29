@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var variable1;
+        var variable2;
+        var sign;
+
+        function multi (a,b){
+            if (!checkNaN(a)) {
+                a=0;
+            }
+            if (!checkNaN(b)) {
+                b=0;
+            }
+            var result = a*b;
+            return result;
+        }
+        function division (a,b){
+            var result;
+            if (!checkNaN(a)) {
+                a=0;
+            }
+            if (!checkNaN(b)) {
+                b=0;
+            }
+            if(checkZero(b)){
+                result = "Ділення на 0 заборонено. Це є ознакою руснявості - за тобою виїхали!"
+            } else {
+                result = a/b;
+                return result;
+            }
+        }
+        function add (a,b){
+            if (!checkNaN(a)) {
+                a=0;
+            }
+            if (!checkNaN(b)) {
+                b=0;
+            }
+            
+            var result = a+b;
+            return result;
+        }
+        function subtr (a,b){
+            if (!checkNaN(a)) {
+                a=0;
+            }
+            if (!checkNaN(b)) {
+                b=0;
+            }
+            var result = a-b;
+            return result;
+        }
+        function checkZero(a){
+            var checker;
+            if (a!=0) {
+                return checker=false;
+            } else{
+                return checker = true;
+            }
+        }
+        function checkNaN(a){
+            var tmp;
+            if (isNaN(a)) {
+                return tmp= false;
+            } else{
+                return tmp = true;
+            }
+         }
+        variable1 = prompt("Введіть перше число");
+        sign = prompt("Яку операцію виконуємо?");
+        variable2 = prompt("Введіть друге число", 0);
+        var res;
+         
+
+        
+        switch (sign) {
+            case "/":
+                res = division(parseInt(variable1), parseInt(variable2));
+                break;
+            case "*":
+                res = multi(parseInt(variable1), parseInt(variable2));
+                break;
+            case "-":
+                res = subtr(parseInt(variable1), parseInt(variable2));
+                break;
+            case "+":
+                res = add(parseInt(variable1), parseInt(variable2));
+                break;
+            default:
+                res = "Такого знаку не існує!";
+                break;
+        }
+
+        if (res=="Такого знаку не існує!") {
+            document.write("<p style = 'color:red'>" + sign + " - " + res + "<p>");
+        } else{
+            document.write("<p style = 'color:green'>" + variable1 +" "+  sign +" "+ variable2+" "+ "=" +" "+ res + "<p>")
+        }
+
+        
+
+
+    </script>
+</head>
+<body>
+    <!-- Создайте калькулятор
+        За каждую операцию будет отвечать отдельная функция, т.е. для сложения - add(a,b), для умножения - multiple(a,b) и т.д.
+        Каждая из них принимает в аргументы только два числа и возвращает результат операции над двумя числами
+        Если число не передано в функцию аргументом - ПО УМОЛЧАНИЮ присваивать этому аргументу 0.-->
+
+</body>
+</html>

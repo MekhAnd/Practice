@@ -1,0 +1,1004 @@
+.glasses{
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@100&display=swap');
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/Roboto/Roboto-Thin.ttf');
+    font-size: 1em;
+}
+
+.glasses__header{
+    height: 43px;
+    background-color: #4cb1ca;
+
+    font-weight: 100;
+    font-size: 0.75em;
+    color: #ffffff;
+    text-transform: capitalize;
+    
+}
+
+.glasses__top-part{
+    height: 104px;
+    
+    font-weight: 150;
+    font-size: 0.75em;
+    color: #656565;
+    text-transform: uppercase;
+
+}
+
+.glasses__cover{
+    height: 475px;
+    background-image: url('../image/MainPhoto.png');
+}
+
+.glasses__body-shop{
+    height: 1750px;
+}
+
+.glasses__contact-delivery{
+    height: 106px;
+    background-color: #4cb1ca;
+    color: #ffffff;
+    font-size: 1.2em;
+
+    text-transform: uppercase;
+}
+
+.glasses__bottom-information {
+    height: 330px;
+    width: 1400px;
+    background-color: #39a0b9;
+
+    color:#ffffff;
+
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.glasses__footer{
+    height: 64px;
+    background-color: #0b4b5a;
+    color: #7ECDE0;
+}
+
+[class*="left-indent"]{
+    width: 188px;
+    height: inherit;
+    display: inline-block;
+    float: left;
+}
+
+[class*="right-indent"]{
+    width: 180px;
+    height: inherit;
+    display: inline-block;
+    float: right;
+}
+
+a{
+    text-decoration: none; 
+}
+
+ul{
+    list-style: none;
+    display: inline-block;
+}
+
+span{
+    text-decoration: line-through;
+    font-size: 0.7em;
+
+    color: black;
+}
+
+[class*="menu"]{
+    margin-left: 0px;
+    
+    padding-left: 10px;
+    padding-right: 20px;
+
+    display: inline-block;
+}
+
+/* header */
+
+.header-link{
+    color: #ffffff;
+}
+
+.header__language-currency{
+    padding-top: 15px;
+    margin-bottom: auto;
+    
+    display: inline-block;
+}
+
+.language-currency__language{
+    display: inline-block;
+    float: left;
+}
+.language-currency__currency{
+    padding-left: 20px;
+    display: inline-block;
+    float: left;
+}
+
+[class*="header__menu_"]{
+    border-right: 1px solid white ;
+       
+    color: white;
+}
+
+.header__menu{
+    height: 35px;
+
+    padding-left: 360px;
+    border-right: none;
+}
+
+.header__menu li:last-child{
+    border-right: none;
+}
+
+/* top-menu */
+
+.glasses__top-part_brand{
+    transform: translate(0%, 75%); 
+   
+    font-size: 2.5em;
+
+    display: inline-block;
+    float: left;
+}
+
+.menu-link{
+    color: #656565;
+}
+
+.top-menu__menu_{
+    padding-left: 5px;
+    display: inline-block;
+}
+
+[class*="top-menu__menu"]{
+    transform: translate(0%, 25%); 
+    padding: 0px;
+    padding-right: 5px;
+}
+
+.glasses__top-menu_search{
+    width: 175px;
+    height: 29px;
+
+    padding-right: 0;
+   
+    line-height: 2.5em;
+       
+    text-align: left;
+    text-transform: capitalize;
+    transform: translate(0%, 35%);
+
+
+    display: inline-block;
+    vertical-align: middle;
+           
+    color: #c7c7c7;
+    background-image: url('../image/loop.png');
+    background-repeat: no-repeat;
+    
+    background-position: bottom 5px right 25px;  
+}
+
+.glasses__top-menu_button{
+    height: 35px;
+    width: 75px;
+
+    padding-right: 0;
+
+    background-image: url('../image/button.png');
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    transform: translate(0%, 65%);
+    display: inline-block;
+}
+
+.glasses__top-menu_cart{
+    padding-left: 0;
+    transform: translate(0%, 55%);
+}
+
+
+/* glasses__cover */
+
+[class*="-arrow"]{
+    height: 65px;
+    width: 65px;
+
+    border-radius: 50%;
+
+    background-color: #ffffff;
+
+    vertical-align: middle;
+}
+
+.left-indent__cover_left-arrow{
+    margin-top: 200px;
+    margin-left: 50px;
+
+    background-image: url('../image/leftSide.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.right-indent__cover_right-arrow{
+    margin-top: 200px;
+    margin-right: 50px;
+
+    background-image: url('../image/rightSide.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+[class*="glasses__cover_text"]{
+    width: 425px;
+
+    display: inline-block;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #ffffff;
+    transform: translate(0%,155%);
+}
+
+.glasses__cover_text_ID01{
+    background: #6c665e;
+}
+.glasses__cover_text_ID02{
+   
+    margin-top: 5px;
+    background: #6c665e;
+}
+
+/* collection-lines */
+
+[class*="_collection-name"]{
+    text-transform: uppercase;
+}
+
+.body-shop__body_top-indent{
+    height: 29px;
+
+    display: inline-block;
+}
+
+.body_left-part_collection-line{
+    height: 318px;
+    width: 755px;
+
+    display: inline-block;
+}
+
+[class*="collection-line__product"]{
+    height: inherit;
+    width: 233px;
+
+    border: 1px;
+    border-style: solid;
+    border-color: #eff1f0;
+   
+    display: inline-block;
+}
+
+.product-indent_horizontal{
+    height: 15px;
+}
+.product-indent{
+    height: 5px;
+    width: 5px;
+    display: inline-block;
+}
+
+.body_right-part__banner-subscribe{
+    width: 233px;
+    height: 807px;
+
+    position: absolute;
+    transform: translate(375%, 0%);
+
+    display: inline-block;
+}
+.banner-subscribe__top{
+    height: 445px;
+    
+    border: 1px solid #eff1f0 ;
+    border-top: 3px solid #4cb1ca;
+}
+
+.banner-subscribe__top_banphoto{
+    width: 213px;
+    height: 400px;
+
+    margin: auto;
+}
+.photo_sign{
+    width: 150px;
+    height: 65px;
+
+    padding-top: 15px;
+    margin: auto;
+
+
+    font-size: 1.8em;
+    text-align: center;
+}
+.photo_banner{
+    width: inherit;
+    height: 310px;
+
+    padding-bottom: 5px;
+    
+    display: inline-block;
+
+    background-image: url('../image/Layer\ 35@1X.png');
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.photo_banner__button{
+    width: 132px;
+    height: 44px;
+
+    display: table-cell;
+
+    vertical-align: middle;
+
+    background-color: #4cb1ca;
+    text-align: center;
+    text-transform: none;
+
+    transform: translate(35%, 600%);
+
+    color: white;
+}
+
+.banner-subscribe__top_dots{
+    width: inherit;
+    height: 40px;
+
+    border-top: 1px solid #eff1f0 ;
+}
+
+[class*="_dots-"]{
+    width: 5px;
+    height: 5px;
+    
+    padding: 5px;
+    margin: auto;
+
+    border-radius: 50%;
+    display: inline-block;
+
+    transform: translate(500%, 100%);
+
+    background-color: #7db122;
+}
+
+.banner_dots-first{
+    background-color: #4cb1ca;
+}
+
+.banner-subscribe__bottom{
+    width: inherit;
+    height: 250px;
+
+    border: 1px;
+    border-style: solid;
+    border-color: #eff1f0;
+
+    color: #635f57;
+
+    border-top: 3px solid #4cb1ca;
+}
+
+.banner-subscribe__bottom_header{
+    width: 156px;
+    padding-top: 25px;
+    padding-bottom: 23px;
+
+    font-size: 1.5em;
+    text-align: center;
+
+    transform: translate(15%, 0%)
+}
+
+.banner-subscribe__bottom_text{
+    width: 186px;
+
+    padding-bottom: 20px;
+
+    font-size: 0.8em;
+    text-transform: none;
+    text-align: center;
+
+    transform: translate(10%, 0%);
+}
+
+.banner-subscribe__bottom_hr{
+    height: 5px;
+    background-image: url('../image/hl.png');
+
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-subscribe__bottom_form{
+    padding-top: 10px;
+
+    border-color: #e2e2e2;
+
+    transform: translate(13%, 0%);
+}
+
+.banner-subscribe__bottom_button{
+    height: 44px;
+    width: 112px;
+
+    border: none;
+
+    text-decoration: none;
+    
+    background-color: #7eb123;
+    color: #ffffff;
+
+    transform: translate(55%, 20%);
+}
+
+[class*="name-price"]{
+    margin-left: 5px;
+    width: 175px;
+    display: inline-block;
+    float: left;
+}
+
+[class*="basket"]{
+    width: 47px;
+    height: 47px;
+
+    border-radius: 50%;
+    background-image: url('../image/basket.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #7db122;
+
+    display: inline-block;
+}
+[class*="item_"]{
+    
+    border: solid;
+    border-color: #eff1f0;
+    
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+}
+
+[class*="_photo"]{
+    margin: 5px;
+
+    background-color: #eff1f0;
+}
+
+[class*="_info"]{
+    text-transform: none;
+}
+
+.name a{
+    color: #464148;
+ }
+
+.price a{
+    text-decoration: none; 
+    color: #92bd53;
+}
+
+[class*="_new"]{
+    height: 95px;
+    width: 95px;
+    display: inline-block;
+
+    position: relative;
+    float: right;
+        
+    z-index: 1;
+    background-image: url('../image/_new_blue_ribbon.png');
+    background-repeat: no-repeat;
+}
+
+[class*="_sale"]{
+    height: 93px;
+    width: 93px;
+    display: inline-block;
+
+    position: relative;
+    float: left;
+        
+    z-index: 1;
+    background-image: url('../image/_sale_green_ribbon_2_.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* glasses__contact-delivery */
+
+.glasses__contact-delivery_first-icon{
+    height: 67px;
+    width: 67px;
+
+    background-image: url('../image/delivery_icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transform: translate(0%, 25%);
+
+    display: inline-block;
+    float: left;
+}
+
+.glasses__contact-delivery_delivery{
+    padding-left: 5px;
+
+    transform: translate(0%, 185%);
+    display: inline-block;
+
+    float: left;
+}
+
+.glasses__contact-delivery_second-icon{
+    height: 67px;
+    width: 67px;
+
+    background-image: url('../image/phone_icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transform: translate(0%, 25%);
+
+    display: inline-block;
+    float: left;
+}
+
+.glasses__contact-delivery_indent{
+    height: 20px;
+    width: 50px;
+
+    display: inline-block;
+    float: left;
+}
+
+.glasses__contact-delivery_delivery_call{
+    padding-left: 5px;
+
+    transform: translate(0%, 185%);
+    display: inline-block;
+
+    float: left;
+}
+
+/* glasses__bottom-menu */
+
+.glasses__bottom-information_top-indent{
+    height: 35px;
+    width: 1200px;
+
+    display: inline-block;
+} 
+
+[class*="point"]{
+    width: 217px;
+  
+    display: inline-block;
+    float:left
+}
+
+.bottom-information__name{
+     text-transform: uppercase;
+}
+
+.bottom-information_indent{
+    width: 50px;
+    height: 50px;
+
+    display: inline-block;
+}
+
+.bottom-information_subscribers{
+    font-size: 0.8em;
+}
+
+.bottom-information__fb_button{
+    height: 23px;
+    width: 47px;
+
+    background-image: url('../image/fb_like.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: none;
+}
+
+.bottom-information_subscribers-photo{
+    border-top: 1px solid #4CB1CA;
+    border-bottom: 1px solid #4CB1CA;
+}
+
+.subscribers-photo_indent{
+    height: 5px;
+    width:  7px;
+
+    display: inline-block;
+    float: left;
+}
+
+.subscribers-photo__foto-indent{
+    height: 5px;
+    width: 5px;
+
+    display: inline-block;
+}
+
+.subscribers-photo__second-row{
+    display: inline-block;
+}
+
+.bottom-information_fb-plugin{
+    padding-top: 5px;
+    font-size: 0.75em;
+}
+
+.bottom-information_indent_vert{
+    height: 50px;
+    width: 15px;
+    display: inline-block;
+    float: left;
+}
+
+.bottom-information__twtt-block_top-logo{
+    height: 46px;
+    width: 46px;
+
+    border-radius: 50%;
+
+    background-image: url('../image/twttr.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    float: left;
+}
+
+.bottom-information__twtt-block_top-txt{
+    width: 165px;
+
+    padding-left: 20px;
+    font-size: 0.7em;
+
+    text-align:justify  ;
+}
+
+.bottom-information__twtt-block_top{
+    padding-top: 10px;
+}
+
+.bottom-information__twtt-block_bottom{
+    padding-top: 20px;
+}
+
+.bottom-txt {  
+    color: #83cfe2;
+}
+
+.bottom-information__inforation-point{
+    padding-top: 7px;
+    
+    font-size: 0.7em;
+}
+
+.bottom-information__contact{
+    padding-top: 7px;
+    line-height: 2.02;
+    font-size: 0.7em;
+
+    border-bottom: 1px solid #4CB1CA;
+}
+
+a[href^="tel:"]{
+    color:#ffffff
+}
+
+a[href^="mailto:"]{
+    color:#ffffff
+}
+
+/* subscribe-fb-photos */
+
+.subscribers-photo_PH01{
+    height: 49px;
+    width: 49px;
+
+    background-image: url('../image/fb/first_0.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    float: left;
+}
+
+.subscribers-photo_PH02{
+    height: 49px;
+    width: 49px;
+
+    background-image: url('../image/fb/first_1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    float: left;
+}
+
+.subscribers-photo_PH03{
+    height: 49px;
+    width: 49px;
+
+    background-image: url('../image/fb/first_2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    float: left;
+} 
+.subscribers-photo_PH04{
+    height: 49px;
+    width: 49px;
+
+    background-image: url('../image/fb/first_3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    float: left;
+}
+
+/* social networks button */
+
+.bottom-information_logo-button_BT01{
+    height: 39px;
+    width: 39px;
+
+    border-radius: 50%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    float: left;
+
+    
+    background-image: url('../image/g+_butt.png');
+}
+
+.bottom-information_logo-button_BT02{
+    height: 39px;
+    width: 39px;
+
+    border-radius: 50%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    float: left;
+ 
+    background-image: url('../image/in_butt.png');
+}
+
+.bottom-information_logo-button_BT03{
+    height: 39px;
+    width: 39px;
+
+    border-radius: 50%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    float: left;
+
+    background-image: url('../image/wf_butt.png');
+}
+
+.bottom-information_logo-button_BT04{
+    height: 39px;
+    width: 39px;
+
+    border-radius: 50%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    float: left;
+
+    background-image: url('../image/fb_butt.png');
+}
+
+/* item-info */
+
+.item_ID01_photo{
+    height: 236px;
+    width: inherit;
+   
+    background-image: url('../image/Items/ID01.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item_ID02_photo{
+    height: 236px;
+    width: inherit;
+    
+    background-image: url('../image/Items/ID02.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item_ID03_photo{
+    height: 236px;
+    width: inherit;
+   
+    background-image: url('../image/Items/ID03.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item_ID04_photo{
+    height: 236px;
+    width: inherit;
+   
+    background-image: url('../image/Items/ID04.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item_ID05_photo{
+    height: 236px;
+    width: inherit;
+    
+    background-image: url('../image/Items/ID05.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item_ID06_photo{
+    height: 236px;
+    width: inherit;
+    
+    background-image: url('../image/Items/ID06.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item_ID07_photo{
+    height: 236px;
+    width: inherit;
+    
+    background-image: url('../image/Items/ID07.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item_ID08_photo{
+    height: 236px;
+    width: inherit;
+   
+    background-image: url('../image/Items/ID08.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item_ID09_photo{
+    height: 236px;
+    width: inherit;
+    
+    background-image: url('../image/Items/ID09.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item_ID10_photo{
+    height: 236px;
+    width: inherit;
+    
+    background-image: url('../image/Items/ID10.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item_ID11_photo{
+    height: 236px;
+    width: inherit;
+    
+    background-image: url('../image/Items/ID11.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item_ID12_photo{
+    height: 236px;
+    width: inherit;
+     
+    background-image: url('../image/Items/ID12.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item_ID13_photo{
+    height: 236px;
+    width: inherit;
+      
+    background-image: url('../image/Items/ID13.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item_ID14_photo{
+    height: 236px;
+    width: inherit;
+    
+    background-image: url('../image/Items/ID14.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item_ID15_photo{
+    height: 236px;
+    width: inherit;
+       
+    background-image: url('../image/Items/ID15_.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.glasses__footer_txt{
+    font-size: 0.8em;
+
+    transform: translate(0%, 145%);
+
+    display: inline-block;
+    float: left;
+    color: #7ECDE0;
+}
+
+.bottom__menu a{
+    font-size: 0.8em;
+
+    text-transform: capitalize;
+    display: inline-block;
+    float: left;
+    color: #7ECDE0;
+}
+
+.bottom__menu li{
+    transform: translate(0%, 45%);
+    border-right: 1px solid #7ECDE0 ;
+}
+
+.bottom__menu li:last-child{
+    border-right: none;
+}
+

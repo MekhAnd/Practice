@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- Создайте массив styles с элементами «Джаз» и «Блюз». <br>
+    Добавьте «Рок-н-ролл» в конец.<br>
+    Замените значение в середине на «Классика». Ваш код для поиска значения в середине должен работать для массивов с любой длиной.<br>
+    Удалите первый элемент массива и покажите его.<br>
+    Вставьте «Рэп» и «Регги» в начало массива. -->
+
+    <script>
+        var styles = ["Djaz", "Blues"];
+        styles.push("Rock and Roll");
+
+        document.write("<b>Создание массива styles + добавление Rock and Roll в конец массива:</b></br><p>" + styles.join(", ") + "</p></br></hr></br> ");
+
+        var index = Math.ceil((styles.length-1)/2);
+
+        styles[index] = "Classiсal";
+
+        document.write("<b>Замените значение в середине на «Классика»:</b></br><p>" + styles.join(", ")+ "</p></br></hr></br> ");
+
+        var splised = styles.splice(0,1);
+
+        document.write("<b>Удалите первый элемент массива и покажите его:</b></br><p>" + styles.join(", ")+ "</br> Удаленный элемент - " + splised+ "</p></br></hr></br> ");
+
+        styles.unshift("Rap", "Reggae");
+
+        document.write("<b>Вставьте «Рэп» и «Регги» в начало массива:</b></br><p>" + styles.join(", ") + "</p></br></hr></br> ");
+
+
+
+    </script>
+</body>
+</html>

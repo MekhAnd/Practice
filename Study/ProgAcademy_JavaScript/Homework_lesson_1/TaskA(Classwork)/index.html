@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Классная работа - УРОК 1</title>
+
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        
+        <script>
+            var name = prompt("Enter your name!");
+            var surname = prompt("Enter your surname!");
+            var age = prompt("Enter your age!");
+            var indent = " ";
+            document.write("<div class=\"header\">"+ "<h1>" + name + indent + surname +"</h1>" +"</div>");
+            document.write("<div class=\"body\">");
+                document.write("<div class=\"nav\">"+ "Your age is:" + age+"</div>");
+                document.write("<div class=\"section\"></div>");
+            document.write("<\/div>");
+            var numberOne = parseInt(prompt("Enter your first number!"));
+            var numberTwo = parseInt(prompt("Enter your second number!"));
+            var numberThree = parseInt(prompt("Enter your third number!"));
+            var result = (numberOne+numberTwo+numberThree)/3;
+            document.write("<div class=\"footer\">"+"<h1>"+"Your result is "+ result+"</h1>"+"</div>");
+        </script>
+    </body>
+</html>

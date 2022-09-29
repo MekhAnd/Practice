@@ -1,0 +1,800 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,200&display=swap");
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  background-color: #222831;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: #ffffff;
+
+  font-size: 2.5em;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 2 auto;
+}
+
+a {
+  color: #ffffff;
+}
+
+/************* NAVIGATION BAR *************/
+nav {
+  width: 100wh;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.6em;
+
+  line-height: 2.5;
+
+  justify-items: center;
+
+  cursor: pointer;
+}
+
+.navabar-left-side {
+  width: 30%;
+
+  margin-left: 25px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.navabar-left-side button {
+  margin-right: 75px;
+}
+
+.navabar-right-side {
+  width: 30%;
+
+  margin-right: 3%;
+  font-size: 0.6em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.navabar-right-side button {
+  min-width: 15%;
+  margin-left: 15px;
+}
+
+.navabar-right-side__hamburger {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+
+  margin: 0;
+  padding: 7px 0;
+  list-style: none;
+  text-align: left;
+}
+
+.menu button {
+  display: block;
+  padding: 12px 24px;
+  text-decoration: none;
+}
+
+button:hover {
+  color: #4183c4;
+}
+
+span {
+  display: none;
+}
+
+button:hover span {
+  width: 150px;
+
+  display: block;
+  position: absolute;
+  top: 55px;
+
+  font-size: 0.75em;
+}
+
+/************* GREETING PANEL *************/
+
+.header {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+
+h1 {
+  text-align: center;
+
+  font-family: "Spectral", serif;
+  font-size: 2em;
+}
+
+h3 div {
+  margin-bottom: 50px;
+  text-align: center;
+
+  font-family: "Spectral", serif;
+
+  font-size: 2.25em;
+  text-transform: none;
+}
+
+.header-greet {
+  margin: 0 auto;
+  padding: 0;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  text-transform: uppercase;
+}
+.header-greet__quotes h3 {
+  font-size: 1em;
+}
+
+.header-greet__time {
+  font-size: 2.5em;
+}
+
+.header-greet__quotes {
+  width: 90%;
+  height: auto;
+
+  margin: 0 auto;
+
+  text-transform: none;
+  text-align: left;
+
+  font-size: 19px;
+  font-style: italic;
+}
+
+/************* TODAY WEATHER FORECAST *************/
+
+.weather-today__day-forecast {
+  width: 18vw;
+  height: 350px;
+
+  background-color: hsl(208, 100%, 97%, 25%);
+  border-radius: 50px 50px 50px 50px;
+  -webkit-box-shadow: 0px 0px 33px 10px rgba(255, 255, 255, 0.45);
+  box-shadow: 0px 0px 33px 10px rgba(255, 255, 255, 0.45);
+
+  position: relative;
+
+  top: 15%;
+
+  margin: 0 auto;
+  display: none;
+}
+
+.weather-today__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  line-height: 2;
+}
+
+.weather-today__container_forecast-container {
+  display: grid;
+  grid-template-columns: 65% 20%;
+  grid-template-rows: 25% 25% 25% 25%;
+
+  font-size: 0.5em;
+  text-align: center;
+}
+
+.weather-today__container_forecast-container img {
+  width: 50px;
+  height: 50px;
+}
+
+/************* BOTTOM WEATHER FORECAST *************/
+
+.main_weather {
+  width: 95vw;
+  height: 25vh;
+
+  margin: 0 auto;
+  position: relative;
+  top: 70px;
+
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+
+  font-size: 1em;
+  background-color: rgba(176, 183, 197, 0.5);
+  border-radius: 50px 50px 50px 50px;
+  border: aliceblue solid 1px;
+  -webkit-box-shadow: 0px 0px 33px 10px rgba(79, 76, 107, 0.51);
+  box-shadow: 0px 0px 33px 10px rgba(79, 76, 107, 0.51);
+}
+
+.main_weather__daily-forecast {
+  height: 24vh;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  padding-top: 10px;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.main_weather__daily-forecast-date {
+  color: rgb(255, 106, 0);
+  font-size: 1.5em;
+}
+
+.main_weather__daily-forecast-tmp {
+  padding-bottom: 25px;
+
+  position: relative;
+  bottom: 17px;
+
+  color: black;
+  font-size: 1.7em;
+}
+
+#main_weather-icon {
+  width: 100px;
+  height: 100px;
+  position: relative;
+
+  margin: 0 auto;
+}
+
+/************* TO-DO *************/
+
+.todo_on {
+  height: 10px;
+  font-size: 0.8em;
+}
+
+.header-todo__todo {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  top: 13%;
+  left: 73%;
+
+  display: none;
+  flex-direction: column;
+
+  color: #ffffff;
+  font-size: 0.6em;
+  font-weight: 400;
+
+  text-align: center;
+
+  background-color: hsl(208, 100%, 97%, 25%);
+
+  border-radius: 50px 50px 50px 50px;
+
+  -webkit-box-shadow: 0px 0px 33px 10px rgba(255, 255, 255, 0.51);
+  box-shadow: 0px 0px 33px 10px rgba(255, 255, 255, 0.51);
+}
+
+.header-todo__todo-inputContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header-todo__todo-back {
+  width: 35px;
+  height: 35px;
+
+  position: relative;
+  top: -7px;
+  left: -10px;
+
+  background-color: #ffffff;
+  background-image: url("../images/icons/back.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+
+  border-radius: 50px;
+  border: wheat solid 1px;
+}
+
+.header-todo__todo-button {
+  width: 35px;
+  height: 35px;
+
+  position: relative;
+  top: -7px;
+
+  background-color: #ffffff;
+  background-image: url("../images/icons/add.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 50px;
+  border: wheat solid 1px;
+}
+
+.header-todo__todo-input {
+  width: 60%;
+  height: 2em;
+
+  margin-right: 15px;
+
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+
+  font-size: 1em;
+}
+
+/************* CALENDAR *************/
+.calendar_on {
+  position: relative;
+  top: 15%;
+
+  display: none;
+  text-align: center;
+}
+
+.header-todo__calendar {
+  width: 20vw;
+  height: 350px;
+  margin: 0 auto;
+  margin-left: 15%;
+
+  display: flex;
+  flex-direction: column;
+
+  font-size: 0.65em;
+  font-weight: 400;
+
+  background-color: hsl(208, 100%, 97%, 25%);
+  border-radius: 50px 50px 50px 50px;
+  -webkit-box-shadow: 0px 0px 33px 10px rgba(255, 255, 255, 0.45);
+  box-shadow: 0px 0px 33px 10px rgba(255, 255, 255, 0.45);
+}
+
+.header-todo__calendar-container {
+  width: 85%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-todo__calendar-month {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-todo__calendar-day {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.__calendar_first-row {
+  border-bottom: white 1px solid;
+}
+.header-todo__calendar-every-day {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin: 0 auto;
+
+  font-size: 0.4em;
+}
+
+footer div {
+  width: auto;
+}
+
+.const-man {
+  width: 50px;
+  height: 50px;
+
+  display: block;
+  margin: 0 auto;
+}
+
+/************* MODAL login *************/
+
+.modal-login {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 0.5em;
+}
+
+.modal-login-content {
+  background-color: #222831;
+  margin: 3% 65%;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 430px;
+  height: 380px;
+}
+.modal-login-form {
+  width: 90%;
+  height: 250px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-login-form input {
+  width: 90%;
+  height: 3em;
+
+  font-size: 1em;
+
+  color: #ffffff;
+
+  background-color: #222831;
+  border: #ffffff 1px solid;
+
+  border-radius: 15px 15px 15px 15px;
+
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+
+  margin: 5px 10px 5px 10px;
+}
+
+.modal-login-btn_ {
+  width: 90%;
+  height: 3em;
+
+  margin: 0 auto;
+  position: relative;
+  left: -5px;
+  top: 10px;
+
+  border: #ffffff 1px solid;
+  color: #222831;
+
+  background-color: #ffd700;
+
+  line-height: 3;
+}
+.infoAuthLogin {
+  width: 150px;
+  height: 50px;
+
+  position: relative;
+  top: -69px;
+  left: 258px;
+
+  display: none;
+}
+
+.modal-login-with i {
+  font-size: 2.5em;
+}
+
+.modal-login-btn_:hover {
+  background-color: #4183c4;
+}
+.modal-login-with i:hover {
+  color: #4183c4;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  h3 {
+    font-size: 0.3em;
+  }
+
+  .header-greet__quotes {
+    font-size: 0.8em;
+    width: 100%;
+  }
+
+  .header-greet__quotes h3 {
+    font-size: 0.8em;
+    width: 100%;
+  }
+
+  .header-todo__calendar {
+    font-size: 0.45em;
+    font-weight: 200;
+    height: 260px;
+  }
+
+  .header-todo__todo-date {
+    font-size: 0.95em;
+  }
+
+  .header-todo__todo-inputContainer {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-todo__todo-back {
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+
+  .header-todo__todo-button {
+    position: relative;
+    top: 6px;
+    left: 5px;
+  }
+
+  .header-todo__todo-input {
+    width: 100%;
+  }
+
+  .weather-today__day-forecast {
+    width: 18vw;
+    height: 260px;
+    font-size: 0.75em;
+    font-weight: 200;
+  }
+
+  .weather-today__container_forecast-container img {
+    width: 30px;
+    height: 30px;
+
+    position: relative;
+    top: -12px;
+
+    line-height: 1;
+  }
+  .main_weather {
+    height: 24vh;
+  }
+
+  .main_weather__daily-forecast {
+    width: 16%;
+    height: 12vh;
+
+    font-size: 0.75em;
+    font-weight: 400;
+
+    position: relative;
+    top: 0px;
+  }
+
+  .modal-login-content {
+    margin: 5% 54%;
+  }
+}
+
+@media (max-width: 1020px) {
+  .navabar-right-side__hamburger {
+    position: absolute;
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    position: relative;
+    top: 70%;
+  }
+
+  .navabar-right-side {
+    font-size: 0.75em;
+  }
+
+  .header__icon-panel {
+    font-size: 0.4em;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+  h3 {
+    font-size: 0.3em;
+  }
+
+  .header {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .header-greet {
+    display: block;
+    position: relative;
+    top: 62px;
+  }
+
+  .header-greet__quotes h3 {
+    font-size: 19px;
+  }
+
+  .header-todo__calendar {
+    width: 45%;
+    height: 16em;
+    font-size: 0.45em;
+    font-weight: 200;
+  }
+
+  .calendar_on {
+    position: relative;
+    top: 45%;
+    left: 16%;
+  }
+  .header-todo__todo {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 31%;
+    font-size: 0.5em;
+  }
+
+  .weather-today__day-forecast {
+    width: 24vw;
+    height: 260px;
+    font-size: 0.85em;
+    font-weight: 200;
+  }
+
+  .weather-today__container_forecast-container img {
+    width: 30px;
+    height: 30px;
+
+    position: relative;
+    top: -12px;
+
+    line-height: 1;
+  }
+
+  .main_weather {
+    top: 95px;
+  }
+
+  .main_weather__daily-forecast {
+    width: 16%;
+    height: 12vh;
+
+    font-size: 0.75em;
+    font-weight: 400;
+
+    position: relative;
+    top: 0px;
+  }
+
+  .modal-login-content {
+    margin: 5% 46%;
+  }
+}
+
+@media (max-width: 740px) {
+  .weather-today__day-forecast {
+    width: 56vw;
+  }
+.header-greet__quotes{
+  display:none;
+}
+
+  .header-todo__calendar {
+    width: 61%;
+    height: 16em;
+    position: relative;
+    left: -10%;
+    top: -30px;
+  }
+
+  .header-todo__todo {
+    width: 65%;
+    left: 15%;
+  }
+  .main_weather__daily-forecast {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 0.35em;
+    font-weight: 400;
+    position: relative;
+    justify-content: space-around;
+    top: 50px;
+
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  #main_weather-icon {
+    width: 75px;
+    height: 75px;
+    position: relative;
+  }
+
+  .modal-login-content {
+    margin: 5% 0%;
+  }
+}
+
+@media (max-width: 425px) {
+  .header-greet__date {
+    font-size: 1.75em;
+  }
+
+  .header-todo__todo {
+    top: 50%;
+  }
+
+  span {
+    position: absolute;
+    left: -20px;
+  }
+  .modal-login-content {
+    width: 300px;
+    margin: 5% 0%;
+  }
+
+  .navabar-right-side{
+    width:40px;
+  }
+}

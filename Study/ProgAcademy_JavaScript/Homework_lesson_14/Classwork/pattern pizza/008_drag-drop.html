@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drag&Drop</title>
+    <style>
+        #ball {
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            border-radius: 50%;
+            background-image: url('./imgs/002.jpg');
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Реализация Drag’n’Drop через JS. Drag’n’Drop в HTML5 не может организовать перенос «только по горизонтали» или «только по вертикали» или внутри заданной зоны. -->
+    <!-- Ещё одна особенность правильного Drag’n’Drop – событие mousemove отслеживается на document, а не на перемещаемом элементе. -->
+    <div id='ball'></div>
+    <script>
+        // Порядок отображения событий
+        // ball.mousedown → document.mousemove → ball.mouseup.
+        let ball = document.getElementById('ball');
+        ball.onmousedown = (e) => {
+                // Передвижение с учётом изначального сдвига shiftX/shiftY.
+                let coords = getCoords(ball);
+                console.log(`e.pageX -${e.pageX} coords.left -${coords.left}e.pageY- ${e.pageY} coords.top-${coords.top}`)
+                let shiftX = e.pageX - coords.left;
+                let shiftY = e.pageY - coords.top;
+                // разместить на том же месте, но в абсолютных координатах
+                ball.style.position = 'absolute';
+                // переместим в body, чтобы мяч был точно не внутри position:relative
+                document.body.appendChild(ball);
+                moveAt(e);
+
+                ball.style.zIndex = 100;
+                // передвинуть мяч под координаты курсора
+                // и определить точку в которую нужно преместиться
+                function moveAt(e) {
+                    ball.style.left = e.pageX - shiftX + 'px';
+                    ball.style.top = e.pageY - shiftY + 'px';
+                }
+                // перемещать по экрану
+                document.onmousemove = (e) => {
+                    moveAt(e);
+                };
+                // отследить окончание переноса
+                ball.onmouseup = () => {
+                    document.onmousemove = null;
+                    ball.onmouseup = null;
+                };
+            }
+            // Отмена действия браузера по событию dragstart.
+        ball.ondragstart = () => {
+            return false;
+        };
+        // отследить нажатие
+        function getCoords(elem) { //
+            let box = elem.getBoundingClientRect();
+            console.log(box)
+            return {
+                top: box.top + pageYOffset,
+                left: box.left + pageXOffset
+            };
+        }
+    </script>
+</body>
+
+</html>

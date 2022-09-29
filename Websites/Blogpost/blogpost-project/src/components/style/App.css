@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+
+body {
+  /* min-height: calc(100vh-65px); */
+  height: 100%;
+  background-color: #646464;
+  font-family: "Alegreya Sans", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-inner {
+  height: 250px;
+  width: 100%;
+
+  color: white;
+}
+
+.carousel_main.active {
+  justify-content: center;
+  height: 250px;
+  width: 250px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.input {
+  margin: 2px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  /* grid-template-rows: 10% 80% 10%; */
+  height: 100%;
+
+  background-color: #646464;
+  font-size: 1.5em;
+}
+
+.card-body_art {
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  height: 97%;
+
+  font-size: 1.5em;
+}
+
+.card-body_art__price-disc {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.price-disc {
+  text-align: center;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.blogs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-icon_look-art:hover {
+  color: black;
+  background-color: red;
+}
+
+.blogs_hashtags{
+  display: flex;
+  flex-direction: unset;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

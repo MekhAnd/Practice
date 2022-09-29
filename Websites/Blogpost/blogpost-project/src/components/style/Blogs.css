@@ -1,0 +1,30 @@
+.blog-container{
+    margin-bottom: 50px;
+}
+
+.card-body_title-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.blogs_blog-container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.blogs_blog-container-card-text{
+    
+    font-size: 0.70em;
+}
+
+.blogs__bottom-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    margin-bottom: 50px;
+  
+  }

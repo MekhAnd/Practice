@@ -1,0 +1,2 @@
+module HomeWork7a {
+}

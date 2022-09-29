@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/favicon_created_by_logaster.ico" type="image/x-icon">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    
+    <title>Kate`s playground</title>
+  </head>
+  <body>
+    <nav class="header__icon-panel">
+      <div class="navabar-left-side">
+        <button class="icon-panel_today-weather"><span class="help"> Today weather forecast</span><div class="weather-today__container_icon"></div></button>
+        <button class="header__icon-panel_calendar"><i class="calendar plus outline icon"><span class="help"> Calendar & TODO</span></i></button>
+        <button class="header__icon-panel_forecast-4days"><i class="bi bi-umbrella"><span class="help"> Forecast</span></i></button>
+      </div>
+      <div class="navabar-right-side">
+        <div class="navabar-right-side__hamburger"><button><i class="bi bi-three-dots"></i></button></div>
+        <ul class="menu">
+          <li><button class="navbar_registration"> <a href="../static/register.html">Register</a> </button></li>
+          <li><button class="navbar_login">Log in</button></li>
+          <li><a href="../static/about.html"><button><i class="bi bi-question-circle"></i></button></a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="modal-login" class="modal-login">
+      <div id="login"class="modal-login-content">
+        <div class="modal-login-form">
+          <form action="">
+         <input id="userEmailLogIn" type="email" name="email" placeholder="E-mail:">
+         <input id="userPassLogIn" type="password" name="pass" placeholder="Your Password:">
+         </form>
+         <button class="modal-login-btn"><div class="modal-login-btn_">Log in</div></button>
+          <!-- <div>Login with</div> -->
+          <div class="modal-login-info"></div>
+          <button class="infoAuthLogin"><i class="bi red bi-x-square"></i></button>
+         <!-- <div class="modal-login-with">
+            <button><i class="google plus icon"></i></button>
+            <button><i class="facebook f icon"></i></button>
+            <button><i class="microsoft icon"></i></button>
+            <button><i class="linkedin icon"></i></button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="header">
+        <aside class="weather-today">
+            <div class="weather-today__day-forecast">
+              <div class="weather-today__container">
+                <div class="weather-today__container_icon">
+                  <img id="day-forecast_icon" src="" alt="" />
+                </div>
+                <div class="weather-today__container_tmp"></div>
+              </div>
+              <div class="weather-today__container_forecast-container"></div>
+            </div>
+        </aside>
+        <article class="header-greet">
+          <h1 class="header-greet-user">Hi there!</h1>
+          <h3>
+            <div class="header-greet__date"></div>
+            <div class="header-greet__time"></div>
+          </h3>
+          <div class="header-greet__quotes"></div>
+        </article>
+        <aside class="main_header-todo">
+          <div class="calendar_on">
+            <div class="header-todo__calendar">
+              <div class="header-todo__calendar-container">
+                <div class="header-todo__calendar-month">
+                    <button class="header-todo__calendar-month_" name="prev"><i class="angle double left icon"></i></button>
+                    <div class="header-todo__calendar-month-title"></div>
+                    <button class="header-todo__calendar-month_" name="next"><i class="angle double right icon"></i></button>
+                </div>
+              </div>
+              <div class="header-todo__calendar-day">
+                <div class="__calendar_first-row">M</div>
+                <div class="__calendar_first-row">T</div>
+                <div class="__calendar_first-row">W</div>
+                <div class="__calendar_first-row">T</div>
+                <div class="__calendar_first-row">F</div>
+                <div class="__calendar_first-row">S</div>
+                <div class="__calendar_first-row">S</div>
+              </div>
+              <div class="header-todo__calendar-every-day"></div>
+            </div>
+          </div>
+          <div class="todo_on">
+            <div></div>
+            <div class="header-todo__todo">
+                <div class="header-todo__todo-date"></div>
+                <div class="header-todo__todo-inputContainer">
+                    <button class="header-todo__todo-back"></button>
+                    <input class="header-todo__todo-input" type="text" placeholder="Will we plan something?" value="" autofocus="autofocus">
+                    <button class="header-todo__todo-button"></button>
+                </div>
+                <div>
+                    
+                </div>
+                <div class="header-todo__todo-pointsList">
+                    
+                </div>
+            </div>
+            <div></div>
+          </div>
+        </aside>
+      </div>
+      <aside class="main_weather"></aside>
+    </main>
+    <footer><div>const man 2022</div> <div> <img class = "const-man" src="../images/!!Est de fide.png" alt=""></div><div>Est de fide</div></footer>
+    <script src="../script/daySchedule.js"></script>
+    <script src="../script/calendar.js"></script>
+    <script src="../script/login.js"></script>
+    <script src="../script/title.js"></script>
+    <script src="../script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>

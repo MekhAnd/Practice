@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task D</title>
+    <script>
+        let array = ["String",'c',11,,12.56];
+
+        const filter = (array, arg)=>{
+            let newArray=[];
+            for(let i = 0; i<array.length; i++){
+                if(typeof array[i]!=arg){
+                    newArray.push(array[i]);
+                }
+            }
+            return newArray;
+        }
+
+        document.write(filter(array, "number"));
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

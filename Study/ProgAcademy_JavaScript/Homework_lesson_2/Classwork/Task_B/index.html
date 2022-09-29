@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Классная работа - УРОК 2</title>
+</head>
+<body>
+    <script>
+        var login = prompt("Enter your password!");
+        if (login == "Админ") {
+            var password = prompt("Enter your password!");
+            if (password == "Черный Властелин") {
+                document.write("Добро пожаловать!");
+            } else if (password != "Черный Властелин") {
+                document.write("Пароль не верен!");
+            } else {
+                document.write("Вход отменен!");
+            }
+        }
+        else {
+            document.write("Вход отменен!");
+        }
+    </script>
+</body>
+</html>

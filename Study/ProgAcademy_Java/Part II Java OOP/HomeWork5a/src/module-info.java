@@ -1,0 +1,2 @@
+module HoneWork5a {
+}

@@ -1,0 +1,27 @@
+.header{
+    height: 200px;
+    width: 800px;
+}
+.body{
+    height: 400px;
+    width: 800px;
+}
+
+.nav{
+    height: 400px;
+    width: 100px;
+
+    display: inline-block;
+    float: left;
+}
+.section{
+    height: 400px;
+    width: 700px;
+
+    display: inline-block;
+    float: right;
+}
+.footer{
+    height: 200px;
+    width: 800px;
+}

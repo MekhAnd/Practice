@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&display=swap");
+
+.main_monitor {
+  width: 400px;
+  height: 250px;
+
+  margin-top: 20px;
+  margin-left: 50px;
+
+  border: 1px solid red;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+
+  display: flex;
+  flex-flow: row;
+  align-items: left;
+
+  -webkit-box-shadow: 5px 5px 29px 5px rgba(0, 0, 0, 0.79);
+  box-shadow: 5px 5px 29px 5px rgba(0, 0, 0, 0.79);
+}
+.svg {
+  width: 400px;
+  height: 245px;
+  display: inline-block;
+  text-align: right;
+}
+
+.svg01 {
+  width: 250px;
+  height: 250px;
+
+  position: relative;
+
+  background-image: url("./timer_02.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  transform-origin: 47% 45% 0;
+  transform: rotate(45deg);
+}
+
+.svg02 {
+  width: 150px;
+  height: 150px;
+
+  position: relative;
+  top: -200px;
+  left: -10px;
+
+  background-image: url("./timer_02.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  transform-origin: 49% 44% 0;
+  transform: rotate(45deg);
+}
+
+.main_monitor__timer {
+  height: 25px;
+  
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+  top: 100px;
+  left: -130px;
+
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.row {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.main_monitor__btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 15px 0 15px;
+
+  position: relative;
+  left: -120px;
+  top: 0px;
+}
+
+.main_monitor__lap {
+  width: 180px;
+
+  padding-top: 10px;
+  position: relative;
+  top: 10px;
+  left: -110px;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+.mill {
+  width: 23px;
+}
+.lap {
+  width: 50px;
+}
+.main_monitor__laps {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-icon {
+  position: relative;
+  top: -4.5px;
+  left: -8px;
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+}

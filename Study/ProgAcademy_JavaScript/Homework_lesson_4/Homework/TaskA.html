@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task A</title>
+    <script>
+        debugger
+
+        function arrayFunction(a,b){
+            var res = a*b;
+            return res;
+        }
+        var a = prompt("Введіть довжину масиву");
+        function arrayFill(){
+            var array = [];
+            document.write("[");
+            for (let i = 0; i < a; i++) {
+                array.push(parseInt(Math.random()*10));
+                document.write(array[i] + " ");
+            }
+            document.write("]");
+            document.write("<br>");
+            return array;
+        }
+        var factor = prompt("Введіть множник");
+        function final (arrayFunction, arrayFill) {
+            var newArray = arrayFill(a);
+            var final = [];
+            document.write("[");
+            for (var i=0; i<newArray.length; i++){
+                final.push(arrayFunction(parseInt(factor), newArray[i]));
+                document.write(final[i]+" ");
+            }
+            document.write("]");
+            return final;
+        }
+        
+        final(arrayFunction,arrayFill);
+        
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

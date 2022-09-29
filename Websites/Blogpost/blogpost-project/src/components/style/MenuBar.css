@@ -1,0 +1,19 @@
+.navbar-nav {
+  margin: 0 auto;
+}
+
+#menu-bar_container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-bar_logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #545454;
+  background-image: url("../../../public/TS.png");
+  background-size: contain;
+  background-position-y: 40px;
+  background-repeat: no-repeat;
+}

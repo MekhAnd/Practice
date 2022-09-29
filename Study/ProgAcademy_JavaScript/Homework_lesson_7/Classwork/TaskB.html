@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task B,C</title>
+    <script>
+        class User {
+            constructor(name, lastName){
+                this.name = name;
+                this.lastName = lastName;
+            }
+            getLogin(){
+                let tmp = (this.name).toLowerCase();
+                tmp = (tmp.split(""))[0];
+                let login = tmp+(this.lastName).toLowerCase();
+                document.write(login);
+            }
+
+        }
+
+        let vas = new User ("Vasiliy", "Petrov");
+        vas.getLogin();
+        document.write(`<br>`);
+
+
+        function createNewUser (a, b){
+            let tmp = new User(a, b);
+            tmp.password="";
+            let req = prompt("Give me your birthdate (dd.mm.yyyy)");
+            tmp.birthdate=req;
+            getAge();
+            getPassword();
+            function getAge(){
+                let date = new Date();
+                var year = date.getFullYear();
+                let fullAge = year - parseInt((req.split("."))[2]);
+                return document.write("<br> Full age:"+fullAge+"<br>");
+            }
+            function getPassword (){
+                let pass = (tmp.name.split(""))[0] + tmp.lastName.toLowerCase()+(tmp.birthdate).split(".")[2];
+                return document.write("<br> Password: " + pass +"<br>");
+            }
+
+            return tmp;
+        }
+
+        const iv = createNewUser ("Ivan", "Vasiliev");
+        iv.getLogin();
+
+        document.write(`<br> ${iv.name} ${iv.lastName}<br> ${iv.birthdate}`);
+
+        
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

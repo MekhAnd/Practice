@@ -1,0 +1,2 @@
+module HomeWork13StreamAPIIntrC {
+}

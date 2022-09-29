@@ -1,0 +1,5 @@
+com\example\Message.class
+com\example\GetListServlet.class
+com\example\JsonMessages.class
+com\example\MessageList.class
+com\example\AddServlet.class

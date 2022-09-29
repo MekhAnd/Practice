@@ -1,0 +1,14 @@
+
+.input{
+    height: 2.5em;
+    margin: 4px;
+    border-radius: 5px;
+    border: 1px grey solid;
+  }
+.input:focus{
+    outline:none;
+    transform: scale(1.01);
+}
+.ck-editor__editable{
+  min-height: 400px;
+}

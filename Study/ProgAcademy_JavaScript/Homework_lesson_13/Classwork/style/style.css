@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+
+main{
+    width: 1000px;
+    
+    background: black;
+
+    display: flex;
+    flex-direction: column;
+    
+    
+    font-family: 'Raleway Dots';
+    
+    font-size: 40px;
+    font-weight: 800;
+
+}
+
+   
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    /* flex-direction: column; */
+    color: white;
+    border-bottom: 1px solid white;    
+}
+
+.currency_container {
+    display: none;
+    justify-content: space-between;
+    text-align: center;
+    /* flex-direction: column; */
+    color: rgb(255, 1, 1);
+    border-bottom: 1px solid white;  
+    
+      
+}
+
+#chng{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 100%;
+}
+
+.flag{
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    line-height: 250%;
+}
+.country{
+    width: 250px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+.currency{
+    width: 250px;
+    color: white;
+}

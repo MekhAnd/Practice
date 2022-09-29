@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classwork</title>
+    <script>
+        debugger
+        function Calculator(a,b) {
+            this.a = a;
+            this.b = b;
+        }
+        
+        Calculator.prototype.toRead = function(){
+            var a = prompt("Введіть перше значення");
+            var b = prompt("Введіть друге значення");
+            var inst = new Calculator(a,b);
+            return inst;
+        }
+
+        Calculator.prototype.toPrint = function (){
+            document.write("a = " + this.a +"<br />"+ "b = " + this.b + "<br />") ;
+        }
+
+        var calc0 = new Calculator(3, 5);
+        var calc1 = calc0.toRead();
+
+        
+        Calculator.prototype.sum = function(){
+            return parseInt(this.a)+ parseInt(this.b);
+        }
+        Calculator.prototype.mul = function(){
+            return parseInt(this.a)*parseInt(this.b);
+        }
+
+                
+        calc0.toPrint();
+        document.write("<br>+++++++++++<br>")
+        calc1.toPrint();
+
+        document.write("<br>************<br>")
+
+        document.write(calc0.sum() +" & " + calc1.sum());
+        document.write("<br>===<br>");
+        document.write(calc0.mul()+ " & " + calc1.mul());
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,7 @@
+G:\Java_OOP_WorkSpace\HomeWork\ProgKyivUA\HomeWork13StreamAPI_terminal\
+G:\Java_OOP_WorkSpace\HomeWork\testfolder\
+G:\Java_OOP_WorkSpace\.metadata\
+G:\Shara\
+G:\temp\
+G:\WebDev\
+J:\USB\

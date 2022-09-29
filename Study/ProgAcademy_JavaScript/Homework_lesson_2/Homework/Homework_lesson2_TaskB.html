@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашня робота завданя 2</title>
+</head>
+<body>
+    <p>Перепишите if...else c использованием нескольких операторов ? </p>
+    </br>
+
+    <p> var message; </br> if (login == "Вася"){ </br> message = "Привет!"; </br> }else if (login == "Директор") { </br> message = "Здравствуйте!"; </br> }else if (login == "") { </br> message = "Нет логина"; </br> }else { </br> message = ""; </br>}</p>
+
+
+    <script>
+        var message; 
+        var login = prompt("Enter your login!");
+        if (login == "Вася"){ 
+            message = "Привет!";
+        }else if (login == "Директор") { 
+            message = "Здравствуйте!"; 
+        }else if (login == "") { 
+            message = "Нет логина";
+        }else { 
+            message = "";
+        };
+
+        document.write("</br> <hr>"+ message);
+
+        var mess;
+        login == "Вася"? mess = "Привет!": (login == "Директор"?  mess = "Здравствуйте!":(login == ""? mess = "Нет логина": mess = ""));
+        document.write("</br> <hr>"+ mess);
+
+    </script>
+</body>
+</html>

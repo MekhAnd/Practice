@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a868d06-e746-4121-acaf-fcdf4e047a35" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LessonThree_TaskB/ChatClient/out/production/ChatClient/com/gmail/mekhanich/andrii/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonThree_TaskB/ChatClient/out/production/ChatClient/com/gmail/mekhanich/andrii/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LessonThree_TaskB/ChatClient/src/com/gmail/mekhanich/andrii/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonThree_TaskB/ChatClient/src/com/gmail/mekhanich/andrii/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LessonThree_TaskB/ChatServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonThree_TaskB/ChatServer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LessonThree_TaskB/ChatServer/target/classes/com/example/AddServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonThree_TaskB/ChatServer/target/classes/com/example/AddServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LessonThree_TaskB/ChatServer/target/tomcat/logs/access_log.2022-01-13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LessonTwo_TaskB/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LessonTwo_TaskB/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="22xmugLiuuq9mFhf05zUR34v7UZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LessonTwo_TaskB" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Java_Enterprise_WorkSpace\Homework\LessonThree_TaskA" />
+      <recent name="G:\Java_Enterprise_WorkSpace\Homework\LessonThree_TaskA\src\main\webapp" />
+      <recent name="G:\Java_Enterprise_WorkSpace\Homework\LessonThree_TaskA\src\main\java\com\gmail\mekhanich\andrii" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Standart" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a868d06-e746-4121-acaf-fcdf4e047a35" name="Changes" comment="" />
+      <created>1640787840431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640787840431</updated>
+      <workItem from="1640788813119" duration="42000" />
+      <workItem from="1640788897525" duration="63000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

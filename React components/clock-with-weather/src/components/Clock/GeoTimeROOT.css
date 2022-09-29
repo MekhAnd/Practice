@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+.geo-time {
+  width: 400px;
+  height: 180px;
+
+  margin: 10px 0 20px 50px;
+
+  display: flex;
+  flex-direction: row;
+
+  border-radius: 50px 50px 50px 50px / 50px 50px 50px 50px;
+
+  font-family: "Josefin Sans", sans-serif;
+
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 212, 255, 1) 50%,
+    rgba(9, 9, 121, 1) 100%
+  );
+
+  -webkit-box-shadow: 5px 5px 25px 5px rgb(12, 72, 85);
+  box-shadow: 5px 5px 25px 5px rgb(49, 109, 121);
+}
+
+.geo-time_monitor {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+
+  margin: 0 auto;
+}
+
+.geo-time_monitor {
+  padding-top: 10px;
+  margin: 0 auto;
+  color: white;
+}
+
+.geo-time_main_monitor{
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  display: block;
+  word-wrap: normal;
+  font-size: 1.2rem;
+}
+
+.time {
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 21px;
+  font-size: 3.5rem;
+}
+
+.temp {
+  height: 50px;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 59px;
+
+  font-size: 2.5rem;
+}
+
+.position {
+  padding-bottom: 5px;
+  display: block;
+  position: relative;
+  top: 25px;
+  word-wrap: normal;
+
+  font-size: 1.2rem;
+}
+
+.weather-icon {
+  display: block;
+  position: relative;
+  top: 15px;
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Task B</title>
+    <script>
+        function Human(name, lastName, age, gender){
+            this.name = name;
+            this.lastName = lastName;
+            this.age = age;
+            this.gender = gender;
+            this.ageClassification=function(){
+                var ageClass;
+                if (this.age<=15) {
+                   ageClass = "Child";
+                } else if (this.age<=22) {
+                    ageClass = "Teen";
+                } else if (this.age<=44) {
+                    ageClass = "Young";
+                } else if (this.age<=65) {
+                    ageClass = "Elder";
+                } else if (this.age>65) {
+                    ageClass = "Old";
+                } 
+                return document.write("Hi! My name is " + this.name + " " + this.lastName + " and I am a " + ageClass.toLocaleLowerCase() + " " + this.gender + "!<br>");
+            }
+                                   
+        };
+
+        Human.prototype.jump = function(){
+          document.write("I can jump!! Hop <br>");
+        }
+       
+        var person1 = new Human ("Ivan", "Ivanov", 25, "male");
+        var person2 = new Human ("Victoria", "Victorova", 55, "female");
+       
+        Human.staticHelloMethod = function(){
+            document.write("Hello!");
+        }
+        Human.statusCheck = "Checked";
+               
+        person2.step = function() {
+            document.write("Cok Cok Cok Cok <br>");
+        }
+        
+        person1.step = function(){
+            document.write("Top Top Top Top <br>");
+        }
+
+    
+        Human.staticHelloMethod();
+        document.write("<br>"+Human.statusCheck);
+
+        document.write("<br><hr><br>");
+
+        person1.ageClassification();
+        person1.step();
+        person1.jump();
+        
+        document.write("<br><hr><br>");
+        
+        person2.ageClassification();
+        person2.step();
+        person2.jump();
+        document.write("<br><hr><br>");
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

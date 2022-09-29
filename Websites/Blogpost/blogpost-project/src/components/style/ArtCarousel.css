@@ -1,0 +1,74 @@
+.carousel{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #646464;
+}
+
+
+.button-icon_carousel{
+    width: 50px;
+    height: 50px;
+
+    margin: 0 50px 0 50px;
+    
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 50%;
+
+    color:white;
+    font-size: 2em;
+}
+
+.arrow_left{
+    width: 35px;
+    height: 35px;
+
+    background-image: url("../../../public/arrow_back.png");
+    background-position: center;
+    }
+
+.arrow_right{
+    width: 35px;
+    height: 35px;
+
+    background-image: url("../../../public/arrow_forward.png");
+    background-position: center;
+    }
+
+.carousel_main{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;    
+}
+
+.carousel_main__card-img{
+    justify-content: center;
+}
+
+.carousel_main__card-info{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.carousel_main-price{
+    text-align: center;
+    font-size: 2em;
+    color:#DA0037;
+    font-weight: 600;
+}
+.link-to{
+    
+    color:white;
+    text-decoration: none;
+    text-align: center;
+}

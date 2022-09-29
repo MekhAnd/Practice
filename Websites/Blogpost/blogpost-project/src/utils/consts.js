@@ -1,0 +1,11 @@
+export const ADMIN_ROUTE = "/admin";
+export const LOGIN_ROUTE = "/login";
+export const REGISTRATION_ROUTE = "/registration";
+export const WRITE_BLOG_ROUTE = "/write_blog";
+export const CREATE_ART_ROUTE = "/create_art";
+export const ALL_BLOG_ROUTE = "/blogs";
+export const ART_ROUTE = "/art";
+export const ALL_ART_ROUTE = "/arts";
+export const COMMENT_ROUTE = "/comment";
+export const MAIN_ROUTE = "/" 
+export const HASH_BLOG_ROUTE = "/tagblog"

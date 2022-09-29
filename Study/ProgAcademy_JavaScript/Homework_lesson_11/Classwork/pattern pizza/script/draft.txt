@@ -1,0 +1,108 @@
+
+//    document.onmousedown = (e)=>{
+        
+//         if(!e.target.className.includes('draggable')){
+//            return
+//         } else {
+           
+//             let coords = getCoords(e.target);
+//             let shiftX = e.pageX - coords.left;
+//             let shiftY = e.pageY - coords.top;
+
+//             e.target.style.position = 'absolute';
+//             e.target.style.zIndex = 100;
+
+//             document.plate.appendChild(e.target);
+//             e.target.style.zIndex=100;
+
+//             centrDrop(e);
+
+//             function centrDrop(e){
+//                 e.target.style.left = e.pageX - shiftX;
+//                 e.target.style.top = e.pageY - shiftY;
+//             }
+
+//             document.onmousemove=(e)=>{
+//                 centrDrop(e);
+//             }
+//             e.target.ondragstart=()=>{
+//                 return false;
+//             }
+//             e.target.ondragover = () =>{
+//                 e.target.preventDefault();
+//             }
+//             e.target.onmouseup = ()=>{
+//                 document.onmousemove = null;
+//                 e.target.onmouseup = null;
+//             };
+//         }
+//     }
+//     function getCoords (e){
+//         let box = e.getBoundingClientRect();
+//        //Дописати якщо NAN
+        
+//         let pricePlace = document.getElementsByClassName('price');
+//         price = parseFloat(pricePlace[0].innerText.replace(/\D+/g,""));
+//         price+=parseFloat(e.className.replace(/\D+/g,""));
+//         pricePlace[0].innerHTML = `<p>Цiна: ${price} грн</p>`   
+//         console.log(price)
+
+
+//         // let toppingPlace = document.getElementsByClassName('toping');
+//         // console.log(toppingPlace[0]);
+//         // let saucesPlace = document.getElementsByClassName('sauces');
+//         // console.log(saucesPlacePlace[0]);
+
+//         console.log(`${e.style.top+scrollY} ${e.style.left+scrollX}`)
+//         return {
+//             top: box.top + scrollY,
+//             left: box.left + scrollX
+       
+//         };
+//     }
+    
+    
+    /*
+    sauceClassic.onmousedown = (e) =>{
+        console.log(e.target.className)
+        let coords = getCoords(sauceClassic);
+        let shiftX = e.pageX - coords.left;
+        let shiftY = e.pageY - coords.top;
+
+        sauceClassic.style.position = 'absolute';
+        // sauceClassic.style.width = '207px';
+        // sauceClassic.style.height = '100px';
+
+
+        plate.appendChild(sauceClassic);
+        sauceClassic.style.zIndex=100;
+
+        centrDrop(e);
+
+        function centrDrop(e){
+            sauceClassic.style.left = e.pageX - shiftX;
+            sauceClassic.style.top = e.pageY - shiftY;
+        }
+
+        document.onmousemove=(e)=>{
+            centrDrop(e);
+        }
+
+        sauceClassic.onmouseup = ()=>{
+            document.onmousemove = null;
+            sauceClassic.onmouseup = null;
+        };
+    }
+    sauceClassic.ondragstart=()=>{
+        return false;
+    }
+    function getCoords (e){
+        let box = e.getBoundingClientRect();
+        console.log('!')
+        console.log(box.top + " " + box.left)
+        return {
+            top: box.top + pageYOffset,
+            left: box.left + pageXOffset
+        };
+    }
+   */

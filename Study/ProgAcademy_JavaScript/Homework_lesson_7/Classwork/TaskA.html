@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task A</title>
+    <script>
+        'use strict'
+        debugger
+        let word = ["АТЛЕТИКА", "БАДЬОРИЙ", "ВЕЛИКИЙ", "ГУМАННИЙ", "ЧЕРГОВИЙ", "МІНІСТЕРСТВО", "ЕКОНОМІКА", "КАБІНЕТ", "ТЕЛЕПОРТАЦІЯ", "ЛЯКАЮЧИЙ", "ЛЕВІАФАН", "ЗЛОЧИНЕЦЬ", "НАКЛАДКА", "ЗАЛИШИТИ", "МОНІТОР", "СИСТЕМА", "РОЗУМІННЯ", 
+        "КРИХКИЙ", "ТВОРЧІСТЬ"];
+
+        let element =  Math.ceil(Math.random()*word.length);
+        
+        const coverWord = (word[element]).split("");
+        var printWord = [word[element].length];
+
+        for(let i =0; i<coverWord.length; i++){
+            printWord[i]="- ";
+        }
+
+        document.write("Привіт! <br> Давай зіграємо! Ми загадали слово яке складається з " + printWord.length + " літер. Всі літери українськи заглавні. Отже ти маєш " +  printWord.length*2 +" спроб для того щоб вгадати слово<br> За кожну не вірну літеру ти отримає один штрафний бал. Якщо и набереш 7 штрафних балів - ти програв! <br>")
+        document.write("Отже, це твоє слово<br><hr><br>" + printWord + "<br>");
+
+        const checker = (array) =>{
+            let swtcher = true;
+            for (let i = 0; i< array.length; i++) {
+                if(array[i]==="- "){
+                    swtcher=false;
+                    break;
+                }
+            }
+            return swtcher;
+        }
+       
+        let game = () =>{
+            var ticket = 0;
+            var counter = coverWord.length*2; 
+            while(counter < 0||ticket<= 7||checker(printWord)){
+                var symbol = (prompt("Введіть букву!"));
+                symbol.toUpperCase();
+                document.write(`Твій варіант - ${symbol}<br>`);
+                if(coverWord.includes(symbol)){
+                    for (let i = 0; i<coverWord.length; i++){
+                        if(coverWord[i]===symbol){
+                            printWord[i]=symbol;
+                        }
+                    }
+                    counter--;
+                } else{
+                    ticket ++;
+                    counter--;
+                }
+            document.write(`${printWord}<br>`);
+            document.write(`У вас залишилось ${counter} спроб <br>У вас  ${ticket}  штрафних балів!<br>`);
+            document.write(`<hr><hr><hr>`);
+            document.write(`Наступна спроба!`)
+            }   
+        }
+        
+        game();
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

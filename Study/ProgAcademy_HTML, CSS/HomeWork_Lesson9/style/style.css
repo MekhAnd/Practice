@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+.page{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    width: 100%;
+    height: 556px;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+}
+.header__main-part{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+.header__main-part_left-column{
+    display: grid;
+    grid-template-rows: 10% 25% 17% 10%;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 800;
+}
+.header__main-part_right-column{
+    display: grid;
+    grid-template-rows: 10% 10% 80%;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.main-part__right-column_flag{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url('../images/flag.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header__main-photo{
+    background-image: url('../images/1-2x.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.header__main-part_address{
+    font-size: 0.6em;
+    font-weight: 200;
+}
+main{
+    width: 100%;
+    
+
+    margin-bottom: 10px;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 5% 22.5% 67.5% 5%;
+}
+.main__text{
+    line-height: 200%;
+}
+footer{
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+}
+.footer_container{
+
+}
+.footer__line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+[class*=footer__line_logo-]{
+    width: 100px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__line_logo-indent{
+    width: 30px;
+}
+.footer__line_logo-FB{
+    border-radius: 50%;
+    background-image: url('../images/fb.png');
+    background-position: center;
+    background-size: 115%;
+    cursor: pointer;
+}
+.footer__line_logo-LIN{
+    border-radius: 50%;
+    background-image: url('../images/in.png');
+    background-position: center;
+    background-size: 115%;
+    cursor: pointer;
+}

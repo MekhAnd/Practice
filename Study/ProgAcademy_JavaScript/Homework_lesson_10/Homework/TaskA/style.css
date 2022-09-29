@@ -1,0 +1,74 @@
+main{
+    width: 100%;
+    height: 900px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 5% 80% 5%;
+    background-color: black;
+}
+.container{
+    display: flex;
+    grid-template-rows: 3% 94% 3%;
+}
+.container_slider_body{
+    width: 100%;
+    height: 100%;
+    background-image: url('../TaskA/images/IMG_20190707_212246.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: grid;
+    grid-template-rows: 80% 5% 10%;
+    /* justify-content: center; */
+   
+    /* box-shadow: -8px 4px 32px 16px rgba(170, 145, 20, 0.2);     */
+}
+
+
+button{
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+
+    border-radius: 50%;
+    border: none;
+    
+    background-color: rgb(132, 132, 155);
+    opacity: 50%;
+    
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: red;
+    text-align: center;
+    align-content: center;
+}
+
+.button_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* transform: translate(0, 2300%); */
+}
+
+ul{
+    color: rgb(236, 9, 9);
+    cursor: pointer;
+}
+
+li{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+
+    /* margin-right: 100px;
+    margin-left: 100px; */
+    /* float: left; */
+    /* list-style: none; */
+}
+#dotes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

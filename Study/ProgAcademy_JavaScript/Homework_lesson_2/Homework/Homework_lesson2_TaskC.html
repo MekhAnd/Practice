@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашня робота - завдання 3</title>
+</head>
+<body>
+    <p> Дано два числа А и В где (А"<"B). Вывести на экран сумму всех чисел расположенных в числовом промежутке между А и В. Вывести на экран все не четные значения  расположенных в числовом промежутке между А и В</p>
+    <script>
+        var a; 
+        var b;
+        
+        do {
+            a = prompt("Enter first number!");
+            b = prompt("Enter second number!");
+        } while (a>b);
+
+        var res = 0;
+        for (var i = (+a); i <=(+b); i++) {
+            res +=i;      
+        };
+        document.write("The summ of this chain is - " + res);
+        
+        document.write("</br><hr> This is odd numbers -" );
+        for (var j = (+a); j <=(+b); j++) {
+            if(j % 2  !== 0){
+                document.write(" " + j + ";");
+            }   
+        };
+    
+    </script>
+</html>

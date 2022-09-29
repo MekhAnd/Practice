@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+
+    <script>
+        var doc = {
+            title: "",
+            body:"",
+            footer:"",
+            date:"",
+            attachment:{
+                title: {},
+                body:{},
+                footer:{},
+                date:{},
+            },
+            toString: function(){
+                document.write("<p> Title: "+ this.title +"</p>");
+                document.write("<p> Body: "+ this.body +"</p>");
+                document.write("<p> Footer: "+ this.footer +"</p>");
+                document.write("<p> Date: "+ this.date +"</p>");
+                document.write("<hr>")
+                document.write("<p> Attachmet title: "+ this.attachment.title +"</p>");
+                document.write("<p> Attachmet body: "+ this.attachment.body +"</p>");
+                document.write("<p> Attachmet footer: "+ this.attachment.footer +"</p>");
+                document.write("<p> Attachmet date: "+ this.attachment.date +"</p>");
+            }
+        }
+
+        doc.title = "Hello JS";
+        doc.body = "This is my first steps in this language!";
+        doc.footer = "Andrii!";
+        doc.date = "22/03/2022";
+        doc.attachment.title = "Hello World";
+        doc.attachment.body = "This is the most popular phrase in computer science";
+        doc.attachment.footer = "Andriy";
+        doc.attachment.date = "22/03/2022";
+
+        doc.toString();
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

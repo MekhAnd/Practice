@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main: #1c46cf;
+    --sub: #00db25;
+    --dark: #10004b;
+}
+
+body {
+    background: linear-gradient(50deg, var(--main) -10%, var(--dark) 110%);
+    font-size: 3vh;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding-top: 40vh;
+    color: white;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+}
+
+a {
+    display: inline-block;
+    padding: 0.9em 1.4em;
+    margin: 1em;
+    font-size: 0.7em;
+    background: white;
+    color: var(--dark);
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-decoration: none;
+}

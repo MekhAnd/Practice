@@ -1,0 +1,260 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+div{
+    font-family: 'Times New Roman', Times, serif;
+    src: url('../fonts/Minion Pro Regular.otf'), url('../fonts/ADOIF_.PFB');
+}
+
+.hf{
+    height: 70px;
+    background-color: #8c0a0d;
+    color: #f5cf64;
+
+}
+
+a{
+    color: #f5cf64;
+    text-decoration: none;
+}
+
+.first{
+   
+    height: inherit;
+    width: 67px;
+    display: inline-block;
+    float: left;
+
+}
+
+#logo{
+    
+    width: 300px;
+    height: 55px;
+
+    vertical-align: middle;
+    display: inline-block;
+    float: left;
+    
+}
+
+#menu{
+    width: 760px;
+    height: 15px;
+
+    padding-bottom: 25px;
+    vertical-align: middle;
+    display: inline-block;
+    float: left;
+
+    list-style: none;
+    padding: 10px;
+}
+
+li{
+    float: left;
+    list-style: none;
+    padding: 10px;
+        
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.list{
+    margin: 0px;
+    padding-top: 15px;
+    display: inline-block;
+}
+.listLang{
+
+    background: url('../image/flag.png') no-repeat center left;
+        
+    margin: 0;
+    padding: 4px 0 4px 35px;
+    list-style: none;
+}
+
+#bodyCentre{
+    height: 800px;
+
+    background-image: url('../image/backgrond_.png');
+    background-size: 100%;
+    
+    background-repeat: no-repeat;
+    background-position: top;
+      
+}
+#center{
+    width: 1170px;
+    display: inline-block;
+}
+#mainPhoto{
+    width: 1170px;
+    height: 330px;
+
+    border: 3px solid black;
+
+    margin-top:26px;
+    
+    background-image: url('../image/mainPhoto.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    display: inline-block;
+    float: left;
+}
+#leftSide{
+    width: 100px;
+    height: inherit;
+
+    background-image: url('../image/buttonLeft.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: inline-block;
+    float: left;
+}
+#mainPhoto_centre{
+    width: 970px;
+    display: inline-block;
+    float: left;
+}
+#topTxt{
+    height: 54px;
+    width: inherit;
+
+    padding-top: 30px;
+    display: inline-block;
+
+    font-size: 4em;
+    text-align: center;
+}
+#buttonMore{
+    height: 42px;
+    width: 200px;
+
+    margin-top:  12px;
+    margin-left:  390px;
+    
+    font-size: 1.75em;
+    color: black;
+    
+    text-align: center;
+    border-radius: 10px;
+
+    background: url('../image/rectangle_main.svg') top center/200px 35px no-repeat, url('../image/rectangle.svg') bottom center/200px 43px no-repeat;
+
+    display: inline-block;
+    float: left;
+
+    vertical-align: middle;
+
+
+}
+#dots{
+    width: 700px;
+    height: 15px;
+
+    margin-top: 220px;
+}
+#dotR{
+    width: 15px;
+    height: 15px;
+
+    padding-left: 450px;
+    background-image: url('../image/dotsWhite.png');
+    background-position:  right;
+    background-repeat: no-repeat; 
+
+    position: absolute;
+
+    display: inline-block;
+    float:left;
+}
+#dotC{
+    width: 15px;
+    height: 15px;
+
+    margin-left: 475px;
+    background-image: url('../image/dotsBr.png');
+    background-position:  center;
+    background-repeat: no-repeat; 
+
+    vertical-align: middle;
+    
+    position: absolute;
+
+    display: inline-block;
+    float:left;
+}
+
+#dotL{
+    height: 15px;
+    width: 15px;
+
+    margin-left: 500px;
+
+    background-image: url('../image/dotsWhite.png');
+    background-repeat: no-repeat;
+    background-position: right;
+
+    display: inline-block;
+    float: left;
+    
+}
+    
+#rightSide{
+    width: 100px;
+    height: inherit;
+
+    background-image: url('../image/buttonRight.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: inline-block;
+    float: left;
+}
+#titles{
+    height: 110px;
+    width: inherit;
+    display: inline-block;
+    float: left;
+    text-align: left;
+}
+.news1{
+    width: 270px;
+
+    padding-left: 20px;
+    display: inline-block;
+    float: left;
+}
+.news2{
+    width: 276px;
+
+    padding-left: 20px;
+    display: inline-block;
+    float: left;
+}
+.news3{
+    width: 270px;
+
+    padding-left: 20px;
+    display: inline-block;
+    float: left;
+}
+.news4{
+    width: 270px;
+
+    padding-left: 20px;
+    display: inline-block;
+    float: left;
+}
+
+#footer{
+    font-size: 1.25em;
+    text-align: center;
+}
+

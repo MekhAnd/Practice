@@ -1,0 +1,214 @@
+:root {
+    background-color: #f2f2f2;
+}
+a{
+    color: #b88f3f;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+    font-size: 1.2em;
+
+}
+a::first-letter{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.8em;
+    color: black;
+}
+#body{
+    width: 1250px;
+}
+.selection {
+    padding-left: 25px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 20px;
+    
+    width: 100%;
+
+    float: left;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #511604;
+    font-size: 2em;
+}
+.dish {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 36px;
+
+    height: 90px;
+    width: 100%;
+
+    display: inline-block;
+}
+[class*="coverPhoto"]{
+    width: 140px;
+    height: 95px;
+    
+    margin-right: 20px;
+    
+    float: left;
+    display: inline-block;
+}
+.horrLine{
+    height: 3px;
+    padding-right: 75px;
+    background-image: url('../image/spliter2_1.png');
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+[class*="namePrice"]{
+    height: 25px;
+    width: 86%;
+        
+    color: #b88f3f;
+    font-size: 0.8em;
+    
+    display: flex;
+    float: left;
+}
+[class*="nameDish"]{
+   position: inherit;
+   display: inline-block;
+}
+[class*="dottedLine"]{
+   height: 2px;
+   
+   padding-left: 5px;
+   padding-top: 23px;
+   
+   background-image: url('../image/spliter1v2v1.png');
+   background-repeat: repeat-x;
+   background-position-y: bottom;
+
+   display: flex;
+   float:left;
+  
+   flex:content;
+}
+[class*="price"]{
+    text-align: left;
+    display: flex;
+    float: left;
+}
+[class*="description"]{
+    padding-top: 50px;
+    padding-right: 20px;
+    width: 99%;
+    
+    color: #536571;
+    font-size: 0.6em;
+    text-align: justify;
+    display: inline-flexbox;
+}
+/* Cover photos for dishes */
+.coverPhotoID0{
+    background-image: url('../image/whole-grain-pancake-stack.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+}
+.coverPhotoID1{
+    background-image: url('../image/tomato-eggs-featured-image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.coverPhotoID2{
+    background-image: url('../image/ham-eggs.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.coverPhotoID3{
+    background-image: url('../image/purridge.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.coverPhotoID4{
+    background-image: url('../image/scallop_carpaccio.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.coverPhotoID5{
+    background-image: url('../image/salted_salmon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.coverPhotoID6{
+    background-image: url('../image/herring_with_potatos.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.coverPhotoID7{
+    background-image: url('../image/rucola_orange.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.coverPhotoID8{
+    background-image: url('../image/war_s_beef.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.coverPhotoID9{
+    background-image: url('../image/various_fresh_s.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.coverPhotoID10{
+    background-image: url('../image/three_fish_s.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.coverPhotoID11{
+    background-image: url('../image/borsch_w_pomp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.coverPhotoID12{
+    background-image: url('../image/chicken_broth.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.coverPhotoID13{
+    background-image: url('../image/salmon_cream_s_1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.coverPhotoID14{
+    background-image: url('../image/halibut_fillet.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.coverPhotoID15{
+    background-image: url('../image/pork-shin.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.coverPhotoID16{
+    background-image: url('../image/beef steak with demi glace sauce.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}
+.coverPhotoID17{
+    background-image: url('../image/ouzbek pilau.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+}

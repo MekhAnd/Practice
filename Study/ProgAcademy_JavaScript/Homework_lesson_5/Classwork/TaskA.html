@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classwork</title>
+
+    <script>
+        // debugger
+        var wallet={
+            name: "Ivan",
+            currency:[
+                    {currencyName: "Bitcoin", exchangeRate: 41604.30, quantity: 0, logo: "<img src='images/logo/BTC.png'/>"},
+                    {currencyName: "Ethernium", exchangeRate: 2839.64, quantity: 4, logo: "<img src='images/logo/ETH.png'/>"},
+                    {currencyName: "Stellar", exchangeRate: 0.197708, quantity: 600, logo: "<img src='images/logo/XLM.png'/>"}
+                ],
+            currencyRate:29.34,
+            toString: function (a) {
+                document.write("<div>")
+                document.write("<div style = 'background-color:black; color: white; font-size: 2em; font-weight:600; display: grid; grid-template-rows: 25% 25% 25% 25%'>");
+                document.write("<div style = 'border-bottom: 1px solid white'><p> Привіт " + this.name + "! </p> </div>");
+                document.write("<div style = 'margin: 20px; border-bottom: 1px solid white;'><p> На сьогодні в тебе: </p> </div>");
+                document.write("<div style = ' margin: 20px; font-size: 0.75em; font-weight:200; display:flex; flex-direction: row; justify-content: space-between; text-align: center;'>");
+
+                for(let i = 0; i<this.currency.length; i++){
+                    if(this.currency[i].currencyName===a){
+                        document.write("<div>" + this.currency[i].logo + "</div>");
+                        document.write("<div>" + "<b>" + this.currency[i].quantity + "</b>" + " монет(и)" + "</div>");
+                        document.write("<div>" + "Це еквівалент: " + "<b>" + (this.currency[i].quantity * this.currency[i].exchangeRate).toLocaleString() +"</b>" + " долларів США" + "</div>");
+                        document.write("<div>" + "Або: " + ((this.currency[i].quantity * this.currency[i].exchangeRate)*this.currencyRate).toLocaleString() + " гривень" + "</div></div>");    
+                    }
+                }
+                document.write("<div>")
+                document.write("<div>")
+            }
+        }
+        var coin ="Ethernium";
+        wallet.toString(coin);
+    </script>
+</head>
+<body>
+
+   
+</body>
+</html>

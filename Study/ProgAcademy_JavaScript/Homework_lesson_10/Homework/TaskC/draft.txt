@@ -1,0 +1,832 @@
+if (array[field]!=9){
+                if(i === 0){
+                    if(k===0){
+                        if (array[field + 1]===9){
+                            console.log(`Проверяет ${array[field + 1]} num = ${newNumber}`)
+                            newNumber++;
+                        }
+                        if (array[field + rows]===9){
+                            console.log(`Проверяет ${array[field + rows]} num = ${newNumber}`)
+                            newNumber++;
+                        }
+                        if (array[field + rows+1]===9){
+                            console.log(`Проверяет ${array[field + rows+1]} num = ${newNumber}`)
+                            newNumber++;
+                        }
+                        array[field] = newNumber;
+
+                    } else if(k!=0 && k<rows-1){
+                        if (array[field - 1]===9){
+                            console.log(`Проверяет ${array[field - 1]} num = ${newNumber}`)
+                            newNumber++;
+                        }
+                        if (array[field +1]===9){
+                            console.log(`Проверяет ${array[field + 1]} num = ${newNumber}`)
+                            newNumber++;
+                        }
+                        if (array[field + (rows+1)]===9){
+                            console.log(`Проверяет ${array[field + (rows+1)]} num = ${newNumber}`)
+                            newNumber++;
+                        }   
+                        if (array[field + rows]===9){
+                            console.log(`Проверяет ${array[field + (rows)]} num = ${newNumber}`)
+                            newNumber++;
+                        }  
+                        if (array[field + (rows-1)]===9){
+                            console.log(`Проверяет ${array[field + (rows-1)]} num = ${newNumber}`)
+                            newNumber++;
+                        }
+                        
+                        array[field] = newNumber; 
+                    }   else if(k===columns-1){
+                        if (array[field - 1]===9){
+                            newNumber++;
+                            console.log(`Проверяет ${array[field-1]} num = ${newNumber}`)
+                        }  
+                        if (array[field + (rows-1)]===9){
+                            newNumber++;
+                            console.log(`Проверяет ${array[field + (rows-1)]} num = ${newNumber}`)
+                        }  
+                        if (array[field + (rows+1)]===9){
+                            console.log(`Проверяет ${array[field + (rows+1)]} num = ${newNumber}`)
+                            newNumber++;
+                        }
+                        array[field] = newNumber; 
+                    }
+                } else if (i!=0&& i<rows-1){
+                    if(k===0){
+                        console.log(`Проверяем ${array[field]}  ${newNumber}`)
+                        if (array[field - rows]===9){
+                            console.log(`Проверяет ${array[field - (rows)]} num = ${newNumber}`)
+                            newNumber++;
+                            console.log(`if 1`)
+                        }
+                        console.log(`${array[field - rows]===9} ${field - rows} !!! ${i} ${k} !!! ${newNumber}`)
+                        if (array[field - (rows-1)]===9){
+                            console.log(`Проверяет ${array[field - (rows-1)]} num = ${newNumber}`)
+                            newNumber++;
+                            console.log(`if 2`)
+                        }
+                        
+                        console.log(`${array[field - (rows-1)]===9} ${field - rows-1} !!! ${i} ${k} ${newNumber}`)
+                        if (array[field + 1]===9){
+                            console.log(`Проверяет ${array[field + 1]} num = ${newNumber}`)
+                            newNumber++;
+                            console.log(`if 3`)
+                        }
+                        
+                        console.log(`${array[field +1]===9} ${field +1} !!! ${i} ${k} ${newNumber}`)
+                        if (array[field + rows+1]===9){
+                            console.log(`Проверяет ${array[field + (rows+1)]} num = ${newNumber}`)
+                            newNumber++;
+                            console.log(`if 4`)
+                        }
+                        
+                        console.log(`${array[field + rows+1]===9} ${field + rows+1} !!! ${i} ${k} ${newNumber}`)
+                        if (array[field + rows]===9){
+                            console.log(`Проверяет ${array[field + (rows)]} num = ${newNumber}`)
+                            newNumber++;
+                            console.log(`if 5`)
+                        }
+                        
+                        console.log(`${array[field + rows]===9} ${field + rows} !!! ${i} ${k} ${newNumber}`)
+                        array[field] = newNumber; 
+                    } else if(k!=0&& k<rows-1){
+                        if (array[field - (rows-1)]===9){
+                            console.log(`Проверяет ${array[field - (rows-1)]} num = ${newNumber}`)
+                            newNumber++;
+                        }
+                        if (array[field - (rows+1)]===9){
+                            console.log(`Проверяет ${array[field - (rows+1)]} num = ${newNumber}`)
+                            newNumber++;
+                        }
+                        if (array[field - rows]===9){
+                            console.log(`Проверяет ${array[field - (rows)]} num = ${newNumber}`)
+                            newNumber++;
+                        }
+                        if (array[field - 1]===9){
+                            console.log(`Проверяет ${array[field -1]} num = ${newNumber}`)
+                            newNumber++;
+                        }
+                        if (array[field + 1]===9){
+                            console.log(`Проверяет ${array[field + 1]} num = ${newNumber}`)
+                            newNumber++;
+                        }
+                        if (array[field + rows]===9){
+                            console.log(`Проверяет ${array[field + (rows)]} num = ${newNumber}`)
+                            newNumber++;
+                        }
+                        if (array[field + (rows+1)]===9){
+                            console.log(`Проверяет ${array[field + (rows+1)]} num = ${newNumber}`)
+                            newNumber++;
+                        }
+                        if (array[field + (rows-1)]===9){
+                            console.log(`Проверяет ${array[field + (rows-1)]} num = ${newNumber}`)
+                            newNumber++;
+                        }
+                        array[field] = newNumber; 
+                    }
+                    else if(k===columns-1){
+                        if (array[field - rows]===9){
+                            newNumber++;//0
+                        }
+                        if (array[field - (rows+1)]===9){
+                            newNumber++;//0
+                        }
+                        if (array[field - 1]===9){
+                            newNumber++;//0
+                        }
+                        if (array[field + rows]===9){
+                            newNumber++;//1
+                        }
+                        if (array[field + (rows-1)]===9){
+                            newNumber++;
+                        }
+                        array[field] = newNumber; 
+                    }
+                } else {
+                    if(k===0){
+                        if (array[field - (rows-1)]===9){
+                            newNumber++;
+                        }
+                        if (array[field - rows]===9){
+                            newNumber++;
+                        }
+                        if (array[field + rows+1]===9){
+                            newNumber++;
+                        }
+                        array[field] = newNumber; 
+                    }
+                    else if(k!=0&& k<rows-1){
+                        if (array[field - (rows-1)]===9){
+                            newNumber++;
+                        }
+                        if (array[field - rows+1]===9){
+                            newNumber++;
+                        }
+                        if (array[field - rows]===9){
+                            newNumber++;
+                        }
+                        if (array[field - 1]===9){
+                            newNumber++;
+                        }
+                        if (array[field + 1]===9){
+                            newNumber++;
+                        }
+                        array[field] = newNumber; 
+                    }
+                    else if(k===columns-1){
+                        if (array[field - rows]===9){
+                            newNumber++;
+                        }
+                        if (array[field - (rows-1)]===9){
+                            newNumber++;
+                        }
+                        if (array[field - 1]===9){
+                            newNumber++;
+                        }
+                        array[field] = newNumber;
+                    }
+                }
+            }
+
+
+
+      
+        //     if (r === 0){
+        //         let place = i;
+        //         for (let row = 0; row<=1; row++){
+        //             //0
+        //             if(c===0){
+        //                 for(let col = 0; col<=1; col++){
+        //                     if(array[place]===9) {
+        //                         num++;
+        //                     }
+        //                     place++;
+        //                 }
+        //                 place--;
+        //             } else if (c!=0){
+        //                 place--;
+        //                 for(let col = -1; col<=1; col++){
+        //                     if(array[place]===9) {
+        //                         num++;
+        //                     }
+        //                     place ++;
+        //                 }
+        //                 place--;
+        //             } else if (c===(rows-1)){
+        //                 place--;
+        //                 for(let col = -1; col<=0; col++){
+        //                     if(array[place]===9) {
+        //                         num++;
+        //                     }
+        //                     place ++;
+        //                 }
+        //                 place--;
+        //             place+=8;
+        //         }
+        //         array[i]=num;
+        //         }
+        //     }
+        //     else if (r!=0){
+        //         let place = i;
+        //         place-=8;
+        //         for (let row = -1; row<=1; row++){
+        //             if(c===0){
+        //                 for(let col = 0; col<=1; col++){
+        //                     if(array[place]===9) {
+        //                         num++;
+        //                     }
+        //                     place++;
+        //                 }
+        //                 place--;
+        //             } else if (c!=0){
+        //                 place--;
+        //                 for(let col = -1; col<=1; col++){
+        //                     if(array[place]===9) {
+        //                         num++;
+        //                     }
+        //                     place ++;
+        //                 }
+        //                 place--;
+        //             } else if (c===(rows-1)){
+        //                 place--;
+        //                 for(let col = -1; col<=0; col++){
+        //                     if(array[place]===9) {
+        //                         num++;
+        //                     }
+        //                     place ++;
+        //                 }
+        //                 place--;
+        //             place+=8;
+        //             }   
+        //             array[i]=num;
+        //         }
+        //     }
+        //     else if (r === (rows-1)){
+        //         let place = i;
+        //         place-=8;
+        //         for (let row = -1; row<=0; row++){
+        //             if(c===0){
+        //                 for(let col = 0; col<=1; col++){
+        //                     if(array[place]===9) {
+        //                         num++;
+        //                     }
+        //                     place++;
+        //                 }
+        //                 place--;
+        //             } else if (c!=0){
+        //                 place--;
+        //                 for(let col = -1; col<=1; col++){
+        //                     if(array[place]===9) {
+        //                         num++;
+        //                     }
+        //                     place ++;
+        //                 }
+        //                 place--;
+        //             } else if (c===(rows-1)){
+        //                 place--;
+        //                 for(let col = -1; col<=0; col++){
+        //                     if(array[place]===9) {
+        //                         num++;
+        //                     }
+        //                     place ++;
+        //                 }
+        //                 place--;
+        //             place+=8;
+        //             }   
+        //             array[i]=num;
+        //         }
+                
+        //     }
+        //     console.log( `array[i] = ${array[i]}; r= ${r} c= ${c}`)
+        // }
+        
+//     }
+//     console.log(array);
+//     return array;
+// }
+
+
+
+
+    // if(array[i]===9){
+    //         console.log (`break + ${i}`);
+    //     }
+    //     else {
+    //         if(r===0){
+    //             if(c===0){
+    //                 for(let row = 0; row<=1; row++){
+    //                     for(let col = 0; col<=1; col++){
+    //                         if(array[position(r+row,c+col)] === 9){
+    //                             num++
+    //                         }
+                            
+    //                     }
+    //                     r+=rows;
+    //                 }
+    //                 array[i] = num;
+    //             }
+    //             else if (c!=0){
+    //                 array[i] = `${r};${c} place = ${position (r,c)}`
+    //             }
+    //             else if(c===(rows - 1)){
+    //                 array[i] = `${r};${c} place = ${position (r,c)}`
+    //             }
+    //         }
+    //         else if (r!=0){
+    //             if(c===0){
+    //                 array[i] = `${r};${c} place = ${position (r,c)}`
+    //             }
+    //             else if (c!=0){
+    //                 array[i] = `${r};${c} place = ${position (r,c)}`
+    //             }
+    //             else if(c===(rows - 1)){
+    //                 array[i] = `${r};${c} place = ${position (r,c)}`
+    //             }
+
+    //         }
+    //         else if(r===(rows - 1)){
+    //             if(c===0){
+    //                 array[i] = `${r};${c} place = ${position (r,c)}`
+    //             }
+    //             else if (c!=0){
+    //                 array[i] = `${r};${c} place = ${position (r,c)}`
+    //             }
+    //             else if(c===(rows - 1)){
+    //                 array[i] = `${r};${c} place = ${position (r,c)}`
+    //             }
+
+    //         }
+    //     }
+
+
+
+
+    // if (array[field]!=9){
+    //     for (let r = -1; r<=1; r++){
+    //         for(let c = -1; c<=1; c++){
+
+    //         }
+    //     }
+    // }
+    
+
+
+
+/* Варіант 3
+    if (r===0){
+            if(c===0){
+                for(let k=c; k<columns-1; c++){
+                    counter++
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+
+                }
+                counter = id;
+                for(let i = r; i<rows-1; i++){
+                    counter+=8;
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+            }
+            else if(c!=0){
+                for(let k=c; k<columns-1; c++){
+                    counter++
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+                counter = id;
+                for(let i = r; i<rows-1; i++){
+                    counter+=8;
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+                counter = id;
+                for(let k=c; k>=0; c--){
+                    counter--
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+            }
+            else {
+                for(let k=c; k<columns-1; c++){
+                    counter++
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+                counter = id;
+                for(let i = r; i>=0; i--){
+                    counter-=8;
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+            }
+        }
+        else if (r!=0){
+            if(c===0){
+                for(let k=c; k<columns-1; c++){
+                    counter++
+                    
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+                counter = id;
+                for(let i = r; i>=0; i--){
+                    counter-=8;
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+                counter = id;
+                for(let i = r; i<rows-1; i++){
+                    counter+=8;
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    console.log(`tmpDiv0.className ${tmpDiv0.className}; id ${tmpDiv0.id}`)
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+            }
+            else if(c!=0){
+                for(let k=c; k<columns-1; c++){
+                    counter++
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    console.log(`tmpDiv0.className ${tmpDiv0.className}; id ${tmpDiv0.id}`)
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+                counter = id;
+                for(let k=c; k>=0; c--){
+                    counter--
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+                counter = id;
+                for(let i = r; i>=0; i--){
+                    counter-=8;
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+                counter = id;
+                for(let i = r; i<rows-1; i++){
+                    counter+=8;
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    console.log(`tmpDiv0.className ${tmpDiv0.className}; id ${tmpDiv0.id}`) 
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+            }
+            else{
+                for(let k=c; k>=0; c--){
+                    counter--
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+                counter = id;
+                for(let i = r; i>=0; i--){
+                    counter-=8;
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+                counter = id;
+                for(let i = r; i<rows-1; i++){
+                    counter+=8;
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+            }
+        }
+        else{
+            if(c===0){
+                for(let i = r; i>=0; i--){
+                    counter-=8;
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+                counter = id;
+                for(let k=c; k<columns-1; c++){
+                    counter++
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+            }
+            else if(c!=0){
+                for(let i = r; i>=0; i--){
+                    counter-=8;
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmp.className; 
+                        break; 
+                    }
+                }
+                for(let k=c; k<columns-1; c++){
+                    counter++
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmp.className; 
+                        break; 
+                    }
+                }
+                for(let k=c; k>=0; c--){
+                    counter--
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmp.className; 
+                        break; 
+                    }
+                }
+            }
+            else{
+                for(let i = r; i>=0; i--){
+                    counter-=8;
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+                counter = id;
+                for(let k=c; k>=0; c--){
+                    counter--
+                    let tmpDiv0 = document.getElementById(`${counter}`);
+                    if (tmpDiv0.className === '0'){
+                        tmpDiv0.style.cssText = `background-color: #587e76`;
+                    } else{
+                        tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+                        tmpDiv0.innerHTML = tmpDiv0.className; 
+                        break; 
+                    }
+                }
+            }
+        }
+
+*/
+
+ /* ВАРІАНТ "2"
+
+        // if(r===0){
+        //     if(c===0){
+        //         let counter = id;
+        //         for(let i = c; i<8; i++){
+        //             counter++
+        //             let tmpDiv0 = document.getElementById(`${counter}`);
+        //             if (tmpDiv0.className === '0'){
+        //                 tmpDiv0.style.cssText = `background-color: #587e76`;
+        //             } else{
+        //                 tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+        //                 tmpDiv0.innerHTML = tmp.className; 
+        //                 break; 
+        //             }
+        //         }
+        //         counter = id;
+        //         for(let i = c; i<8; i++){
+        //             counter +=8;
+        //             let tmpDiv1 = document.getElementById(`${counter}`);
+        //             if (tmpDiv1.className === '0'){
+        //                 tmpDiv1.style.cssText = `background-color: #587e76`;
+        //             } else{
+        //                 tmpDiv1.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+        //                 tmpDiv1.innerHTML = tmp.className;  
+        //             }
+        //         }
+        //     }
+
+
+        /* Варіант 1
+        //     else if (c!=0){
+        //         let tmpDiv0 = document.getElementById(`${id+1}`);
+        //         if (tmpDiv0.className === '0'){
+        //             tmpDiv0.style.cssText = `background-color: #587e76`;
+        //             check0(tmpDiv0.id);
+        //         }
+        //         else{
+        //             tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+        //             tmpDiv0.innerHTML = tmp.className;  
+        //         }
+        //         let tmpDiv1 = document.getElementById(`${id+8}`);
+        //         if (tmpDiv1.className === '0'){
+        //             tmpDiv1.style.cssText = `background-color: #587e76`;
+        //             check0(tmpDiv1.id);
+        //         }
+        //         else{
+        //             tmpDiv1.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+        //             tmpDiv1.innerHTML = tmp.className;  
+        //         }
+        //         let tmpDiv2 = document.getElementById(`${id-1}`);
+        //         if (tmpDiv2.className === '0'){
+        //             tmpDiv2.style.cssText = `background-color: #587e76`;
+        //             check0(tmpDiv2.id);
+        //         }
+        //         else{
+        //             tmpDiv2.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+        //             tmpDiv2.innerHTML = tmp.className;  
+        //         }
+        //     }
+        //     else{
+        //         let tmpDiv1 = document.getElementById(`${id+8}`);
+        //         if (tmpDiv1.className === '0'){
+        //             tmpDiv1.style.cssText = `background-color: #587e76`;
+        //             check0(tmpDiv1.id);
+        //         }
+        //         else{
+        //             tmpDiv1.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+        //             tmpDiv1.innerHTML = tmp.className;  
+        //         }
+        //         let tmpDiv2 = document.getElementById(`${id-1}`);
+        //         if (tmpDiv2.className === '0'){
+        //             tmpDiv2.style.cssText = `background-color: #587e76`;
+        //             check0(tmpDiv2.id);
+        //         }
+        //         else{
+        //             tmpDiv2.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+        //             tmpDiv2.innerHTML = tmp.className;  
+        //         }
+        //     }
+        // } else if (r!=0){
+        //     if(c===0){
+        //         let tmpDiv0 = document.getElementById(`${id+1}`);
+        //         if (tmpDiv0.className === '0'){
+        //             tmpDiv0.style.cssText = `background-color: #587e76`;
+        //             check0(tmpDiv0.id);
+        //         }
+        //         else{
+        //             tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+        //             tmpDiv0.innerHTML = tmp.className;  
+        //         }
+        //         let tmpDiv1 = document.getElementById(`${id+8}`);
+        //         if (tmpDiv1.className === '0'){
+        //             tmpDiv1.style.cssText = `background-color: #587e76`;
+        //             check0(tmpDiv1.id);
+        //         }
+        //         let tmpDiv2 = document.getElementById(`${id-8}`);
+        //         if (tmpDiv2.className === '0'){
+        //             tmpDiv2.style.cssText = `background-color: #587e76`;
+        //             check0(tmpDiv2.id);
+        //         }
+        //         else{
+        //             tmpDiv2.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+        //             tmpDiv2.innerHTML = tmp.className;  
+        //         }
+        //     } else if(c!=0){
+        //         let tmpDiv0 = document.getElementById(`${id+1}`);
+        //         if (tmpDiv0.className === '0'){
+        //             tmpDiv0.style.cssText = `background-color: #587e76`;
+        //             check0(tmpDiv0.id);
+        //         }
+        //         else{
+        //             tmpDiv0.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+        //             tmpDiv0.innerHTML = tmp.className;  
+        //         }
+        //         let tmpDiv1 = document.getElementById(`${id+8}`);
+        //         if (tmpDiv1.className === '0'){
+        //             tmpDiv1.style.cssText = `background-color: #587e76`;
+        //             check0(tmpDiv1.id);
+        //         }
+        //         let tmpDiv2 = document.getElementById(`${id-8}`);
+        //         if (tmpDiv2.className === '0'){
+        //             tmpDiv2.style.cssText = `background-color: #587e76`;
+        //             check0(tmpDiv2.id);
+        //         }
+        //         else{
+        //             tmpDiv2.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+        //             tmpDiv2.innerHTML = tmp.className;  
+        //         }
+        //         let tmpDiv3 = document.getElementById(`${id-1}`);
+        //         if (tmpDiv3.className === '0'){
+        //             tmpDiv3.style.cssText = `background-color: #587e76`;
+        //             check0(tmpDiv0.id);
+        //         }
+        //         else{
+        //             tmpDiv3.style.cssText = `font-size:5.5 em; color:red; text-align: center; background-color:#8ca3a3`
+        //             tmpDiv3.innerHTML = tmp.className;  
+        //         }
+                
+        //     }
+        } */
+
+    
+    
+    
+ 

@@ -1,0 +1,190 @@
+window.addEventListener("DOMContentLoaded", (e) =>{
+
+    let monitor = "";
+    let number0;
+    let number1;
+    let sign ='';
+    let tmp = "";
+    let signchck = false;
+  
+    // document.querySelectorAll("button.button_digit__row, button.button_digit__row_").forEach(button =>{
+    //     button.addEventListener("click", function(e){
+    //         monitor = document.getElementById("monitor");
+    //         monitor.value+=(e.explicitOriginalTarget.value);
+            
+    //     })
+    // })
+
+   
+    // const numInput =  () =>{
+    //     if (monitor === "0") {
+    //         monitor.value = 
+    //     }
+    // }
+
+    const num = () =>{
+        document.querySelectorAll("button.button_digit__row, button.button_digit__row_").forEach(button =>{
+            button.addEventListener("click", function(e){
+                console.log(e.explicitOriginalTarget.value)
+            })
+    }
+
+
+    
+    // document.querySelectorAll("button.button_first__sign").forEach(button =>{
+    //     button.addEventListener("click", function () {
+                       
+    //         if (number0===undefined){
+    //             tmp = monitor.outerHTML;
+    //             number0 = parsing(tmp);
+    //             monitor.innerHTML='';
+    //         } else {
+
+    //             number1 = parsing(tmp);
+    //             number0 = operations(number0,number1,sign);
+    //             monitor.innerHTML= number0;
+    //         }
+    //         console.log("number0 " + number0);
+    //         console.log("number1 " + number1);
+
+    //         sign = (this.value)
+            
+    //     })
+    // })
+    const operations = (num0, num1, sign) =>{
+        let tmpres = 0;
+        if (sign==="%") {
+            tmpres = num0 * (num1/100);
+        } else if (sign==="/"){
+            tmpres = num0 / num1;
+        } else if (sign==="*"){
+            tmpres = num0 * num1;
+        }  else if (sign==="-"){
+            tmpres = num0 - num1;
+        }  else if (sign==="+"){
+            tmpres = num0 + num1;
+        }
+        tmp = '';
+        sign = '';
+
+        return tmpres;
+    }
+
+    const parsing =(a)=>{
+            let number = 0;
+            if (a.includes('.')) {
+                number = parseFloat(tmp.match(/\d+\.\d+/));
+            } else{
+                number = parseInt(tmp.match(/\d+/));
+            }
+            tmp = '';
+            monitor.innerHTML='';
+            return number;
+        }
+
+    
+    
+
+})
+
+// window.addEventListener("DOMContentLoaded", (e) =>{
+//     Array.from(document.getElementsByClassName("button_digit__row")).forEach(button =>{
+//         button.addEventListener("click", function(){
+//             let monitor = document.getElementById("monitor");
+//             monitor.innerHTML+=(this.value);
+//         })
+//     })
+// })
+
+
+
+
+
+
+// Варіант рішення 1
+
+    // document.querySelectorAll("button.button_first__sign").forEach(button =>{
+    //     button.addEventListener("click", function(){
+    //         tmp = monitor.outerHTML;
+    //         arrayNumber.push(parsing(tmp));
+    //         monitor.innerHTML='';
+    //         sign = document.getElementsByClassName("button_first__sign");
+    //         sign = (this.value);
+    //         arraySign.push(sign);
+
+    //         if (arrayNumber.length>1) {
+    //             result();
+                
+    //         }
+
+            
+    //         console.log(arrayNumber + " sign button");
+    //     })
+        
+    // })
+
+    // document.querySelectorAll("button.button_first__row").forEach(button =>{
+    //     button.addEventListener("click", function(){
+    //         serviceSign = (this.value);
+    //         console.log(serviceSign + " servise")
+    //         if(serviceSign ==="c"){
+    //             cleanAll();
+    //         }
+    //     })
+    // })
+    // document.querySelectorAll("button.button_first__sign").forEach(button =>{
+    //     button.addEventListener("mouseup", function(){
+            
+    //         monitor.innerHTML='';
+    //         arraySign.push(sign);
+    //         if (sign==="="|| arrayNumber.length===2) {
+    //             result();
+    //         }
+    //         console.log(arraySign);
+    //     })
+        
+    // })
+    // const result = () =>{
+    //     let res = 0; 
+    //     number0 = arrayNumber[0];
+    //     number1 = arrayNumber[1];
+        
+    //         if (arraySign[0]==="%") {
+    //             tmpres = arrayNumber[0] * (arrayNumber[1]/100);
+    //         } else if (arraySign[0]==="/"){
+    //             tmpres = arrayNumber[0] / arrayNumber[1];
+    //         } else if (arraySign[0]==="*"){
+    //             tmpres = arrayNumber[0] * arrayNumber[1];
+    //         }  else if (arraySign[0]==="-"){
+    //             tmpres = arrayNumber[0] - arrayNumber[1];
+    //         }  else if (arraySign[0]==="+"){
+    //             tmpres = arrayNumber[0] + arrayNumber[1];
+    //         }
+    //         monitor.innerHTML=tmpres;
+    //         res=tmpres;
+    //         cleanArray();    
+    //         arrayNumber.push(res);
+    //         console.log(arrayNumber);
+
+    //  }
+
+    // const cleanArray = () =>{
+    //     arrayNumber.length=0;
+    //     arraySign.length=0;
+    // }
+
+    // const parsing =(a)=>{
+    //     let number = 0;
+    //     if (a.includes('.')) {
+    //         number = parseFloat(tmp.match(/\d+\.\d+/));
+    //     } else{
+    //         number = parseInt(tmp.match(/\d+/));
+    //     }
+    //     return number;
+    // }
+
+    // const cleanAll =()=>{
+    //     monitor.innerHTML = "";
+    //     tmp = "";
+    //     cleanArray();
+    // }

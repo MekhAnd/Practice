@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашня робота - завдання 4</title>
+</head>
+<body>
+    <p> Используя циклы нарисовать прямоугольник, прямоугольный треугольник, равносторонний треугольник, ромб</p>
+
+    <script>
+        var column =  prompt("Enter the columns quantity");
+        var row = prompt("Enter column rows quantity");
+
+
+
+        if (column%2==0) {
+            column++;
+            document.write("I increased the number of your columns by 1 in order for the figure to be symmetrical</br>")
+        }
+        if (row%2==0) {
+            row++;
+            document.write("I increased the number of your rows by 1 in order for the figure to be symmetrical</br>")
+        }
+
+        document.write("<b>Прямоугольник</b></br><hr>");
+
+        for (var i = 0; i < row; i++) {
+            for (var j = 0; j < column; j++) {
+                document.write("*");
+            }
+            document.write("</br>");
+        };
+        document.write("</br>");
+        document.write("<b>Прямоугольный треугольник</b></br><hr>");
+
+        for (var i = 0; i < row; i++) {
+            for (var j = 0; j < column; j++) {
+                if (i>=j){
+                    document.write("*");
+                } else{
+                    document.write(" ");
+                }
+            }
+            document.write("</br>");
+        };
+
+        document.write("</br>");
+        document.write("<b>Равнобедренный треугольник</b></br><hr>");
+
+        for (var i = 0; i < Math.ceil(column/2); i++) {
+            for (var j = 1; j <= column; j++) {
+               if (j==Math.ceil(column/2)) {
+                   document.write("*");
+               } 
+                else if ((j>=(Math.ceil(column/2)-i)&&j<Math.ceil(column/2))) {
+                    document.write("*");
+                } else if ((j<=(Math.ceil(column/2)+i)&&j>Math.ceil(column/2))) {
+                    document.write("*");
+                } 
+               else {
+                    document.write("&nbsp");
+               }
+            }
+            document.write("</br>");
+        };
+
+        document.write("<b>Равнобедренный треугольник - v2</b></br><hr>");
+
+        var rows = Number(row)+1;
+
+        for (var i = 0; i < rows; i++) {
+            for (var j = 0; j < column; j++) {
+                if(i<Math.ceil(rows/2)){
+                    if(j<i&&j<Math.ceil(column/2)){
+                        document.write("*");
+                    } else {
+                        document.write("&nbsp");
+                    }
+                } else if (i==Math.ceil(rows/2)&&j<Math.ceil(column/2)){
+                    document.write("*");
+                } else if(i>Math.ceil(rows/2)) {
+                    if (j<((column-i)+1) ) {
+                        document.write("*");
+                    } else {
+                        document.write("&nbsp");
+                    }
+                }
+                
+            } document.write("</br>") 
+        };
+
+
+        document.write("</br>");
+        document.write("<b>Ромб</b></br><hr>");
+
+        for (var i = 1; i <=row; i++) {
+            for (var j = 1; j <= column; j++) {
+                if(i<Math.ceil(row/2)) {
+                    if (j==Math.ceil(column/2)) {
+                        document.write("*");
+                    } else if ((j>=(Math.ceil(column/2)-(i-1))&&j<Math.ceil(column/2))) {
+                        document.write("*");
+                    } else if ((j<=(Math.ceil(column/2)+(i-1))&&j>Math.ceil(column/2))) {
+                        document.write("*");
+                    } else {
+                        document.write("&nbsp");
+                    }
+                } else if (i==Math.ceil(row/2)){
+                    document.write("*");
+                } else if(i>Math.ceil(row/2)){
+                    if (j<=Math.ceil(column/2)){
+                        if (j<=(i-Math.ceil(column/2))) {
+                            document.write("&nbsp");    
+                        } else{
+                            document.write("*");
+                        }
+                    } else if(j==Math.ceil(column/2)) {
+                        document.write("*");
+                    } else if(j>=Math.ceil(column/2)) {
+                        if (j<=(column-i)+Math.ceil(column/2)) {
+                            document.write("*");    
+                        } else{
+                            document.write("&nbsp");
+                        }
+                    }
+                };
+            };
+            document.write("</br>");
+        };
+
+        document.write ("i- " + i + "</br>");
+        document.write ("j- " + j + "</br>");
+
+        //Филипп, получается, что если i и j доступны за пределемаи цикла, они не инкапсулированы? Или инкапсуляция (как часть ООП в т.ч.) реализована иначе? Или все впереди, и я сильно тороплю события?
+
+    </script>
+    
+</body>
+</html>
