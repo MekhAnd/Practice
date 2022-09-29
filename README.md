@@ -6,11 +6,11 @@ Hi!
 My name is Andriy!
 
 I have more than 25 years experience in sales, more than 10 years of successful experience in organizations of sales in different markets (FMCG, B2C and B2B).
-After this bunch time, I understand that sales sphere is interesting for me, but it is not the work of all my life. Because of this, I have made the decision that I should try to make one of my hobbies into one of my targets. I had an understanding that my expertise at that time in this sphere is about 0 and I did not have enough knowledge to choose right direction of study. 
+After this bunch of time, I understand that sales sphere is interesting for me, but it is not the work of all my life. Because of this, I have made the decision that I should try to make one of my hobbies into one of my targets. I had an understanding that my expertise at that time in this sphere is about 0 and I did not have enough knowledge to choose right direction of study. 
 Also, I understand that Internet technology will develop next decades and with the purpose of fully covering the main direction in this branch I bought two courses:
 - FullStack Developer (by ProgAcademy) 
 - The Complete 2022 Web Development Bootcamp (by Udemy (Dr. Angela Yu))
-After 10 months I understand that these courses are only the start of my studying process because of this at this moment I am passing two more courses:
+After 10 months I realise that these courses are only the start of my studying process because of this at this moment I am passing two more courses:
 - Modern React with Redux (by Udemy (Stephen Grider))
 - The Complete Node.js Developer Course (3rd Edition) (by Udemy (Andrew Mead))
 These crumbs of knowledge give me the possibility to make some interesting for me and useful websites for my friends.
@@ -39,3 +39,9 @@ So, here you can find:
 
 
 Wellcome!!
+
+## 🔗 Links
+
+[![udemy](Stuff/img/pngwing.com(3).png)](https://www.udemy.com/user/andrii-mekhanich/)
+[![linkedin](https://cdn-icons-png.flaticon.com/32/665/665212.png)](https://www.linkedin.com/in/andrey-mekhanich/)
+[![mail_me](https://cdn-icons-png.flaticon.com/32/665/665210.png)](mailto:andrii.mekhanich@gmail.com?subject=[GitHub]%20Importantly)
