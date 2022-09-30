@@ -28,7 +28,9 @@ So, here you can find:
     - React Redux (in propgress) [React & Redux...](https://github.com/MekhAnd/Practice/tree/main/Study/UDEMY_React%20Redux_Stephen%20Grider)
     - The Complete Node.js Developer Course (in propgress) [Node...](https://github.com/MekhAnd/Practice/tree/main/Study/UDEMY_Node_Andrew%20Mead)
     
-- **Single React components [React...](https://github.com/MekhAnd/Practice/tree/main/React%20components)**
+- **Single React components [React...](https://github.com/MekhAnd/Practice/tree/main/React%20components)** 
+_[README.md](React%20components/README.md)_
+
     - Clock with weather (complete) [JS, React...](https://github.com/MekhAnd/Practice/tree/main/React%20components/clock-with-weather)
     - Stopwatch (complete) [JS, React...](https://github.com/MekhAnd/Practice/tree/main/React%20components/stopwatch)
     - Java Enterprice (on hold)  [JS, React...](https://github.com/MekhAnd/Practice/tree/main/React%20components/timer)
@@ -42,6 +44,6 @@ Wellcome!!
 
 ## 🔗 Links
 
-[![udemy](Stuff/img/pngwing.com(3).png)](https://www.udemy.com/user/andrii-mekhanich/)
+<a href="https://github.com/MekhAnd/Practice/tree/main/React%20components/clock-with-weather" ><img src="./Stuff/img/pngwing.com(3).png" width="20" height="35" /></a>
 [![linkedin](https://cdn-icons-png.flaticon.com/32/665/665212.png)](https://www.linkedin.com/in/andrey-mekhanich/)
 [![mail_me](https://cdn-icons-png.flaticon.com/32/665/665210.png)](mailto:andrii.mekhanich@gmail.com?subject=[GitHub]%20Importantly)

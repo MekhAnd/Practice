@@ -10,14 +10,14 @@ function Stopwach() {
   const [round, setRound] = useState([]);
   const [globeTimer, setGlobeTimer] = useState(0);
 
-  const userBrowserDefinition = () => {
-    let respond = navigator.userAgent;
-    if (respond.includes("Chrome")) {
-      return 4;
-    } else {
-      return 16;
-    }
-  };
+  // const userBrowserDefinition = () => {
+  //   let respond = navigator.userAgent;
+  //   if (respond.includes("Chrome")) {
+  //     return 4;
+  //   } else {
+  //     return 16;
+  //   }
+  // };
 
   useEffect(() => {
     let secondsCircle = document.querySelector(".svg01");
