@@ -64,7 +64,7 @@ After all dependencies finish downloading without errors, start your Mongo serve
 | ------ | ------ |
 |<img src="../../../Stuff/img/Todo_041.png" width="450" height="400" />| Сurrent weather in your location|
 |<img src="../../../Stuff/img/Todo_042.png" width="450" height="400" />| Calendar and To-Do list|
-|<img src="../../../Stuff/img/Todo_043.png" width="450" height="45" />| Calendar and To-Do list|
+|<img src="../../../Stuff/img/Todo_043.png" width="450" height="45" />| Weather forecast|
 
 **Calendar and To-Do list**
 
