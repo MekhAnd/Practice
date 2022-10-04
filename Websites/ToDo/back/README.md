@@ -73,7 +73,7 @@ After all dependencies finish downloading without errors, start your Mongo serve
 in field "Will we plan something" input your note. Press "+" icon for add note. 
 In order to return to calendar panel press &#8592; icon. </br> 
 
-<p style="color:red; font-weight:800">Attention</p>
+<p style="color:red; font-weight:800;">Attention</p>
 
 
 1. If you do not install MongoDB all your notes will not exist after reload your web browser.
