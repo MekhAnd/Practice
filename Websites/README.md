@@ -5,7 +5,7 @@ In this folder you can find personal projects (or pet-project) (links at the end
 ## Short description ##
 **To-Do list** 
 
-This is something similar to a daily organizer page or starting page. 
+This is something similar to a daily organizer page or starting page.   
 On this page you can:
 - get current weather 
 - get a short-term forecast (nearest 12 hours)
@@ -27,29 +27,17 @@ A system of authorization and authentication was implemented, the owner has thre
 
 This project is still being developed. 
 
-## Used technologes, Libraries ##
-- React
-- Redux
-- Node
-- MogoDB
-- PostgreSQL
-- Bootstrap
+## Used technologies, Libraries ##
+Used technologies:
+- **React**
+- **Redux**
+- **Node**
+- **MogoDB**
+- **PostgreSQL**
+- **Bootstrap**
 
-- Axios 
-- Bcrypt
-- Body-parser
-- Cors
-- Dotenv
-- ENV
-- Express (express-fileupload)
-- JSON web token (jwt decode)
-- Loadash
-- Mongoose
-- HTML React parser
-- Passport
-- Pg (pg-hstore)
-- Sequelize
-- Uuid
+Used libraries:
+- Axios, Bcrypt, Body-parser, Cors, Dotenv, Express (express-fileupload), JSON web token (jwt decode), Loadash, Mongoose, HTML React parser, Passport, Pg (pg-hstore), Sequelize, Uuid
 
 
 ## The purpose of writing and basic questions ##
@@ -80,13 +68,10 @@ I would like to implement in Blog project:
 
 ## 🔗 Links
 
-... Loading)
+<a href="https://github.com/MekhAnd/Practice/tree/main/Websites/ToDo/back" >**To-Do** - folder...</a>, 
+_[README.md](ToDo/back/README.md)_
 
-<!-- <a href="https://github.com/MekhAnd/Practice/tree/main/React%20components/clock-with-weather" ><img src="../Stuff/img/Clock_weather.png" width="450" height="200" /></a>
 
-<a href="https://github.com/MekhAnd/Practice/tree/main/React%20components/clock-with-weather" >**Clock with current weather** - folder</a> -->
-
-<!-- [**README.md** - file](clock-with-weather/README.md) -->
 
 <!-- <a href="https://github.com/MekhAnd/Practice/tree/main/React%20components/stopwatch" ><img src="../Stuff/img/Stopwatch.png" width="450" height="300" /></a>
 
@@ -99,3 +84,8 @@ I would like to implement in Blog project:
 <a href="https://github.com/MekhAnd/Practice/tree/main/React%20components/timer" >**Timer** - folder</a> -->
 
 <!-- [**README.md** - file](timer/README.md) -->
+
+
+<a href="https://github.com/MekhAnd/Practice/tree/main/React%20components/clock-with-weather" ><img src="../Stuff/img/pngwing.com(3).png" width="20" height="35" /></a>
+[![linkedin](https://cdn-icons-png.flaticon.com/32/665/665212.png)](https://www.linkedin.com/in/andrey-mekhanich/)
+[![mail_me](https://cdn-icons-png.flaticon.com/32/665/665210.png)](mailto:andrii.mekhanich@gmail.com?subject=[GitHub]%20Importantly)
