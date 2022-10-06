@@ -51,7 +51,7 @@ const NavBar = (props) => {
     height: "40px",
     marginRight: "2%",
     borderRadius: "50%",
-    border: "1 solid red",
+    border: "none",
     textAlign: "center",
     fontSize: "1.1rem",
     fontWeight: "600",
@@ -64,7 +64,7 @@ const NavBar = (props) => {
     height: "40px",
     marginRight: "2%",
     borderRadius: "50%",
-    border: "1 solid red",
+    border: "none",
     textAlign: "center",
     fontSize: "1.1rem",
     fontWeight: "600",
@@ -115,6 +115,7 @@ const NavBar = (props) => {
 
   return (
     <Navbar bg="dark" variant="dark" style={{ textAlign: "right" }}>
+      <div style={{width: "75px"}}></div>
       <Container>
         <Nav className="mr-auto">
           {auth & (role === "ADMIN" || role === "AUTHOR") ? (

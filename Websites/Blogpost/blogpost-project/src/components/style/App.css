@@ -96,9 +96,100 @@ body {
   background-color: red;
 }
 
-.blogs_hashtags{
+.blogs_hashtags {
   display: flex;
   flex-direction: unset;
+}
+
+.cover-photo {
+  width: 100%;
+  height: 60vh;
+
+  display: flex;
+  justify-content: space-around;
+
+  background-image: url("../../../public/Field.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+
+  /* background: linear-gradient(0deg, rgba(169,173,173,1) 6%, rgba(218,215,209,1) 97%); */
+
+  text-align: center;
+}
+
+.greet-txt {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 45%;
+  left: 25%;
+
+  justify-content: space-between;
+  animation: color-animation 4s linear infinite;
+}
+
+.greet-txt h1 {
+  font-size: 6em;
+  animation: 5s show ease;
+}
+
+.greet-txt h3 {
+  color: #f7f7f7;
+  font-size: 3em;
+  animation: 7s show ease;
+}
+
+.mouse-icon {
+  width: 50px;
+  height: 50px;
+
+  position: absolute;
+
+  top: 75%;
+  left: 50%;
+
+  background-image: url("../../../public/mouse.png");
+  background-position: 0px 0px;
+  background-repeat: repeat-y;
+  background-size: cover;
+  animation: myanim 0.35s infinite linear;
+  
+}
+
+@keyframes myanim {
+  0%,25%{
+    
+    transform: translateY(5px);
+ }
+ 25%,50%{transform: rotate(5deg);}
+ 50%,75%{
+  transform: translateY(-5px);
+ }
+ 75%,100%{transform: rotate(-5deg);}
+  /* 0%, 25% {
+      left: -1px;
+      -webkit-transform: translateX(-4%);
+      transform: translateX(-4%);
+  }
+  50%, 100% {
+      left: 1px;
+      -webkit-transform: translateX(4%);
+      transform: translateX(4%);
+  } */
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes App-logo-spin {

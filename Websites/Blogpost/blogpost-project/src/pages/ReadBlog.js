@@ -18,8 +18,8 @@ import AddComment from "../components/AddComment";
 import { Button } from "bootstrap";
 import EditComponent from "../components/EditComponent";
 import { clear } from "@testing-library/user-event/dist/clear";
-import {  langUA_DeleteThis, langUA_EditThis, langUA_HashTag } from "../utils/languagesUA";
-import { langENG_DeleteThis, langENG_EditThis, langENG_HashTag } from "../utils/languagesENG";
+import {  langUA_DeleteThis, langUA_EditThis, langUA_HashTag, langUA_Updated, langUA_UpdatedAgo } from "../utils/languagesUA";
+import { langENG_DeleteThis, langENG_EditThis, langENG_HashTag, langENG_Updated, langENG_UpdatedAgo } from "../utils/languagesENG";
 
 
 class ReadBlog extends React.Component {
@@ -173,8 +173,8 @@ class ReadBlog extends React.Component {
                   <div className="text-muted">
                     {" "}
                     <b>
-                      Last updated{" "}
-                      {hours > 24 ? `${days} days` : `${hours} hours`} ago{" "}
+                    {this.props.language === "ENG"? langENG_Updated:langUA_Updated}{" "}
+                      {hours > 24 ? `${days} days` : `${hours} hours`} {this.props.language === "ENG"? langENG_UpdatedAgo:langUA_UpdatedAgo}{" "}{" "}
                     </b>
                   </div>
                   {this.state.role === "ADMIN" ||
