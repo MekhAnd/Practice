@@ -114,7 +114,7 @@ const NavBar = (props) => {
   };
 
   return (
-    <Navbar bg="dark" variant="dark" style={{ textAlign: "right" }}>
+    <Navbar className="navbar-main" bg="dark" variant="dark" style={{ textAlign: "right" }}>
       <div style={{width: "75px"}}></div>
       <Container>
         <Nav className="mr-auto">
@@ -129,7 +129,8 @@ const NavBar = (props) => {
           ) : (
             <div></div>
           )}
-          {auth & (role === "AUTHOR" || role === "ADMIN") ? (
+          {/* || role === "ADMIN" */}
+          {auth & (role === "AUTHOR" ) ? (
             <NavLink
               className="m-2"
               style={{ color: "white", textDecoration: "none" }}
@@ -140,7 +141,8 @@ const NavBar = (props) => {
           ) : (
             <div></div>
           )}
-          {auth & (role === "AUTHOR" || role === "ADMIN") ? (
+          {/* || role === "ADMIN" */}
+          {auth & (role === "AUTHOR" ) ? (
             <NavLink
               className="m-2"
               style={{ color: "white", textDecoration: "none" }}

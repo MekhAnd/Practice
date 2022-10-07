@@ -25,11 +25,12 @@ const Auth = () => {
   const lang = useSelector((state) => state.language);
   const isAuth = useSelector((state) => state.user.isAuth);
   const isLogedIn = location.pathname === LOGIN_ROUTE;
+  console.log(window.innerHeight)
 
   return (
     <Container 
       className="container-sm d-flex justify-content-center align-items-center"
-      style={{ height: window.innerHeight - 54 }}
+      style={{ height: "650px" }}
       
     >
       {isAuth || regStatus ? 

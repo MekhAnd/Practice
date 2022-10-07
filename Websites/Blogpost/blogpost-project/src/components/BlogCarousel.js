@@ -123,7 +123,7 @@ class Blogs extends React.Component {
     const langENG_ReadMore = "Read more blogs...";
     const langUA_ReadMore = "Читати більше записів...";
     return (
-      <div className="blogs_hashtags align-content-start flex-wrap row gx-5 mx-5">
+      <div className="blogs_hashtags align-content-start flex-wrap row gx-5 mx-5" style={{ width: "98%" }}>
         <HashTags />
         <div style={{ width: "65%" }}>
           <div className="m-5">{this.renderList()}</div>

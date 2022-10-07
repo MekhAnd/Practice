@@ -162,6 +162,8 @@ body {
 }
 
 @keyframes myanim {
+  from{opacity: 0;}
+  to{opacity: 1;}
   0%,25%{
     
     transform: translateY(5px);
@@ -171,16 +173,6 @@ body {
   transform: translateY(-5px);
  }
  75%,100%{transform: rotate(-5deg);}
-  /* 0%, 25% {
-      left: -1px;
-      -webkit-transform: translateX(-4%);
-      transform: translateX(-4%);
-  }
-  50%, 100% {
-      left: 1px;
-      -webkit-transform: translateX(4%);
-      transform: translateX(4%);
-  } */
 }
 
 @keyframes show {

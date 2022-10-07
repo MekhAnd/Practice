@@ -16,10 +16,10 @@ All your notes will be stored in DB (in this case MongoDB). Also, a system of Au
 
 **Blogpost** 
 
-This is a personal website with a simple trade zone (or exhibition zone) for people who provide some services (handy craft, repair, events...). Trade zone can be simple and quickly adapted for different kinds or types of businesses.
+This is a personal website with a simple trade zone (or exhibition zone) for people who provide defenete services (handy craft, repair, events...). Trade zone can be simple and quickly adapted for different kinds or types of businesses.
 With this website you can:
 - add your personal articles,
-- arrange these articles for help #hashtags
+- arrange these articles with the help of #hashtags
 - get some reaction from your followers (comments)
 - put your personal goods (events, art products, training or something else).
 

@@ -49,3 +49,9 @@ I deliberately made different design for these components. In nearest plans - to
 <a href="https://github.com/MekhAnd/Practice/tree/main/React%20components/timer" >**Timer** - folder</a>
 
 <!-- [**README.md** - file](timer/README.md) -->
+
+<hr>
+
+<a href="https://github.com/MekhAnd/Practice/tree/main/React%20components/clock-with-weather" ><img src="../Stuff/img/pngwing.com(3).png" width="20" height="35" /></a>
+[![linkedin](https://cdn-icons-png.flaticon.com/32/665/665212.png)](https://www.linkedin.com/in/andrey-mekhanich/)
+[![mail_me](https://cdn-icons-png.flaticon.com/32/665/665210.png)](mailto:andrii.mekhanich@gmail.com?subject=[GitHub]%20Importantly)

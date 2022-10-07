@@ -17,7 +17,9 @@ These crumbs of knowledge give me the possibility to make some interesting for m
 
 And, I think so, this is the right place to store this projects...
 
-So, here you can find:
+**So, here you can find:**
+<hr>
+
 - **My study (courses, homework) [Study...](https://github.com/MekhAnd/Practice/tree/main/Study)**
     - Java Base (complete) [Java I...](https://github.com/MekhAnd/Practice/tree/main/Study/ProgAcademy_Java/Part%20I%20Java%20Start)
     - Java OOP (complete) [Java II...](https://github.com/MekhAnd/Practice/tree/main/Study/ProgAcademy_Java/Part%20II%20Java%20OOP)
@@ -27,17 +29,29 @@ So, here you can find:
     - The Complete 2022 Web Development Bootcamp (complete) [JavaScript...](https://github.com/MekhAnd/Practice/tree/main/Study/UDEMY_FullStack_London%20App%20Brewery)
     - React Redux (in propgress) [React & Redux...](https://github.com/MekhAnd/Practice/tree/main/Study/UDEMY_React%20Redux_Stephen%20Grider)
     - The Complete Node.js Developer Course (in propgress) [Node...](https://github.com/MekhAnd/Practice/tree/main/Study/UDEMY_Node_Andrew%20Mead)
+<hr>
     
 - **Single React components [React...](https://github.com/MekhAnd/Practice/tree/main/React%20components)** 
 _[README.md](React%20components/README.md)_
 
     - Clock with weather (complete) [JS, React...](https://github.com/MekhAnd/Practice/tree/main/React%20components/clock-with-weather)
     - Stopwatch (complete) [JS, React...](https://github.com/MekhAnd/Practice/tree/main/React%20components/stopwatch)
-    - Java Enterprice (on hold)  [JS, React...](https://github.com/MekhAnd/Practice/tree/main/React%20components/timer)
+    - Java Enterprice (on hold)  [JS, React...](https://github.com/MekhAnd/Practice/tree/main/React%20components/timer)</br>
+<hr>
 
-- **Pet projects here [Projects...](https://github.com/MekhAnd/Practice/tree/main/Websites)**
+- **Pet projects here [Projects...](https://github.com/MekhAnd/Practice/tree/main/Websites)** _[README.md](Websites/README.md)_
     - To-do with weather (complete) [JS, Node, MongoDB...](https://github.com/MekhAnd/Practice/tree/main/Websites/ToDo)
     - Blogpost with the small trade zone  (still in work) [JS, React, Node, PostgreSQL...](https://github.com/MekhAnd/Practice/tree/main/Websites/Blogpost)
+
+
+## Personal development plan
+ - React Redux course (55%) [React & Redux...](https://github.com/MekhAnd/Practice/tree/main/Study/UDEMY_React%20Redux_Stephen%20Grider)
+ - The Complete Node.js course (15%) [Node...](https://github.com/MekhAnd/Practice/tree/main/Study/UDEMY_Node_Andrew%20Mead)
+ - SQL for beginners (15%) [SQL...](https://www.udemy.com/course/sql-oracle-certification/learn/lecture/16661338?start=0#overview)
+ - CS50 with Python and JawaScript [CS50...](https://courses.prometheus.org.ua/courses/course-v1:Prometheus+CS50+2021_T1/about)
+ - Algorythms (Kevin Wayne Princeton University) [Algorythms...](https://www.coursera.org/learn/algorithms-part1)
+ - Java Enterprise Edition 8 for Beginners [Java EE...](https://www.udemy.com/course/java-enterprise-edition-8/) 
+
 
 
 Wellcome!!
