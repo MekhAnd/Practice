@@ -85,6 +85,9 @@ Basket.belongsTo(User);
 Basket.hasMany(BasketItem);
 BasketItem.belongsTo(Basket)
 
+Art.hasMany(BasketItem);
+BasketItem.belongsTo(Art);
+
 Blog.hasMany(Comment);
 Comment.belongsTo(Blog);
 //HASHTAG
