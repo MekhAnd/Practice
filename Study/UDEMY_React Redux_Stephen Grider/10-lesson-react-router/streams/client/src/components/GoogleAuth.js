@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { signIn, signOut } from "../actions";
 
 class GoogleAuth extends React.Component {
-//   state = { isSignedIn: false };
+  //   state = { isSignedIn: false };
   componentDidMount() {
     window.gapi.load("client:auth2", () => {
       window.gapi.client
@@ -18,12 +18,11 @@ class GoogleAuth extends React.Component {
           this.auth.isSignedIn.listen(this.onAuthChange);
         });
     });
-    console.log(this.props);
-    console.log(this.state);
   }
+
   onAuthChange = (isSignedIn) => {
     if (isSignedIn) {
-      this.props.signIn(this.auth.currentUser.get().getId);
+      this.props.signIn(this.auth.currentUser.get().getId());
     } else {
       this.props.signOut();
     }
@@ -57,7 +56,6 @@ class GoogleAuth extends React.Component {
   }
 
   render() {
-    console.log(this.props.isSignedIn);
     return <div>{this.renderAuthButton()}</div>;
   }
 }
@@ -66,6 +64,5 @@ export const mapStateToProps = (state) => {
   return { isSignedIn: state.auth.isSignedIn };
 };
 export default connect(mapStateToProps, { signIn, signOut })(GoogleAuth);
-
 
 // npm install redux-form --legacy-peer-deps
