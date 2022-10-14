@@ -26,8 +26,8 @@ And, I think so, this is the right place to store this projects...
     - Java Enterprice (on hold) [Java III...](https://github.com/MekhAnd/Practice/tree/main/Study/ProgAcademy_Java/Part%20III%20Java%20PRO)
     - HTML and CSS (complete) [HTML & CSS...](https://github.com/MekhAnd/Practice/tree/main/Study/ProgAcademy_HTML%2C%20CSS)
     - JavaScript (complete) [JavaScript...](https://github.com/MekhAnd/Practice/tree/main/Study/ProgAcademy_JavaScript)
-    - The Complete 2022 Web Development Bootcamp (complete) [JavaScript...](https://github.com/MekhAnd/Practice/tree/main/Study/UDEMY_FullStack_London%20App%20Brewery)
-    - React Redux (in propgress) [React & Redux...](https://github.com/MekhAnd/Practice/tree/main/Study/UDEMY_React%20Redux_Stephen%20Grider)
+    - The Complete 2022 Web Development Bootcamp (complete) [JavaScript...](https://github.com/MekhAnd/Practice/tree/main/Study/UDEMY_FullStack_London%20App%20Brewery), [***certificate***](https://udemy-certificate.s3.amazonaws.com/image/UC-3e0f14fc-c89e-4c14-9d72-1d262a5c107c.jpg?v=1655725193000)
+    - React Redux (complete) [React & Redux...](https://github.com/MekhAnd/Practice/tree/main/Study/UDEMY_React%20Redux_Stephen%20Grider), [***certificate***](https://udemy-certificate.s3.amazonaws.com/image/UC-aea71e6e-c2a2-430a-af51-57d6361e2bfe.jpg?v=1665741483000)
     - The Complete Node.js Developer Course (in propgress) [Node...](https://github.com/MekhAnd/Practice/tree/main/Study/UDEMY_Node_Andrew%20Mead)
 <hr>
     
@@ -45,7 +45,7 @@ _[README.md](React%20components/README.md)_
 
 
 ## Personal development plan
- - React Redux course (55%) [React & Redux...](https://github.com/MekhAnd/Practice/tree/main/Study/UDEMY_React%20Redux_Stephen%20Grider)
+ - React Redux course (100%) [React & Redux...](https://github.com/MekhAnd/Practice/tree/main/Study/UDEMY_React%20Redux_Stephen%20Grider)
  - The Complete Node.js course (15%) [Node...](https://github.com/MekhAnd/Practice/tree/main/Study/UDEMY_Node_Andrew%20Mead)
  - SQL for beginners (15%) [SQL...](https://www.udemy.com/course/sql-oracle-certification/learn/lecture/16661338?start=0#overview)
  - CS50 with Python and JawaScript [CS50...](https://courses.prometheus.org.ua/courses/course-v1:Prometheus+CS50+2021_T1/about)
