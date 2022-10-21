@@ -17,6 +17,7 @@ const product = {
   price: 3,
   stock: 201,
   salesPrice: undefined,
+  rating: 5
 };
 
 const { label: productLabel, stock, price, rating = 5 } = product;
