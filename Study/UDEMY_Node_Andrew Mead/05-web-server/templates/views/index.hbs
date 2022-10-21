@@ -2,16 +2,22 @@
 <html>
     <head>
         <link rel="stylesheet" href="/css/style.css">
-        <script src="/js/app.js"></script>
+        
         <title>Main</title>
     </head>
     <body>
         <div class="main-content">
             {{>header}}
-            <p>Use this saite to get your weather!</p>
-            {{!-- <p>{{name}}</p> --}}
+            <p>Use this site to get your weather!</p>
+            <form action="">
+                <input placeholder="Input your location" type="text">
+                <button>Search</button>
+            </form>
+            <p id="message-1"></p>
+            <p id="message-2"></p>
         </div>
         {{>footer}}
+        <script src="/js/app.js"></script>
     </body>
         
 
