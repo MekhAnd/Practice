@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
-import { BrowserRouter} from "react-router-dom";
-import {useSelector } from "react-redux"
+import { BrowserRouter } from "react-router-dom";
 
 import "./style/App.css";
 import AppRouter from "./AppRouter";
