@@ -7,8 +7,10 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Album> albums = new ArrayList<>();
 
+
         Album album = new Album("Stormbringer", "Deep Purple");
         album.addSong("Stormbringer", 4.6);
+//        System.out.println(album.addSong("Stormbringer", 4.6));
         album.addSong("Love don't mean a thing", 4.22);
         album.addSong("Holy man", 4.3);
         album.addSong("Hold on", 5.6);
@@ -33,53 +35,62 @@ public class Main {
 
         LinkedList<Song> playList = new LinkedList<Song>();
         albums.get(0).addToPlayList("You can't do it right", playList);
+        System.out.println("You can't do it right " + albums.get(0).addToPlayList("You can't do it right", playList));
         albums.get(0).addToPlayList("Holy man", playList);
+        System.out.println("Holy man " + albums.get(0).addToPlayList("Holy man", playList));
         albums.get(0).addToPlayList("Speed king", playList);  // Does not exist
+        System.out.println("Speed king " + albums.get(0).addToPlayList("Speed king", playList));
         albums.get(0).addToPlayList(9, playList);
+        System.out.println(9 + " " + albums.get(0).addToPlayList(9, playList));
+        albums.get(1).addToPlayList(8, playList);
+        System.out.println(8 + " " + albums.get(1).addToPlayList(8, playList));
         albums.get(1).addToPlayList(3, playList);
+        System.out.println(3 + " " + albums.get(1).addToPlayList(3, playList));
         albums.get(1).addToPlayList(2, playList);
+        System.out.println(2 + " " +albums.get(1).addToPlayList(2, playList));
         albums.get(1).addToPlayList(24, playList);  // There is no track 24
+        System.out.println(24 + " " + albums.get(1).addToPlayList(24, playList));
+        System.out.println("*".repeat(10));
+        System.out.println(playList);
+
+//        Album.SongList sl = album.new SongList();
+//        System.out.println(sl.getSongs());
+
     }
+
+
 }
 
-//Playlist
+//Playlist - Inner Class
 //
-//Create a program that implements a playlist of songs.
-//To start you off, implement the following classes:
+//Description:
 //
-//1.  Album
-//    -  It has three fields, two Strings called name and artist, and an ArrayList that holds objects of type Song called songs.
-//    -  A constructor that accepts two Strings (name of the album and artist). It initialises the fields and instantiates songs.
+//For this exercise you will need your Album and Song classes from Coding Exercise 46: Playlist. The Album class will
+// be modified to use an inner class called SongList which will replace the ArrayList that was used to hold the list of
+// songs for an album.
 //
-//    -  And three methods, they are:
+//The SongList class will use an ArrayList to hold the track list for the album. To do this a member variable
+// called songs will need to be declared and a constructor will need to be implemented to initialize the field.
 //
-//        -  addSong(), has two parameters of type String (title of song), double (duration of song) and returns a boolean.
-//        Returns true if the song was added successfully or false otherwise.
-//        -  findSong(), has one parameter of type String (title of song) and returns a Song. Returns the Song if it
-//        exists, null if it doesn't exists.
-////        -  addToPlayList(), has two parameters of type int (track number of song in album) and LinkedList
-//        (the playlist) that holds objects of type Song, and returns a boolean. Returns true if it exists and
-//        it was added successfully using the track number, or false otherwise.
+//In addition, the inner class will need three(3) methods:
 //
-//        -  addToPlayList(), has two parameters of type String (title of song) and LinkedList (
-//        the playlist) that holds objects of type Song, and returns a boolean. Returns true if it exists and it was
-//        added successfully using the name of the song, or false otherwise.
+//1) add - accepts a parameter of type Song. This method returns a boolean value which will be false if the song is
+// found to already be in the songs list. If not, the song will be added to the list and a value of true will be
+// returned.
 //
+//2) findSong - accepts the title of a song as its only parameter. If the song with that title is found in the
+// list then the song is returned from the method. If not, a value of null is returned.
 //
-//2.  Song
+//3) findSong - overridden method which accepts a track number for a song. The track number is of type int.
+// If a song is found with that track number the song is returned, otherwise null is returned.
 //
-//    -   It has two fields, a String called title and a double called duration.
-//    -  A constructor that accepts a String (title of the song) and a double (duration of the song).
-//    It initialises title and duration.
+//The member variable, constructor and all methods may be marked with private access.
 //
-//    -  And two methods, they are:
-//        -  getTitle(), getter for title.
-//        -  toString(), Songs overriding toString method. Returns a String in the following format: "title: duration"
-////
-//->  SAMPLE INPUT
+//***IMPORTANT*** - If you are using an IDE to write this code you may have your inner class marked with private access.
+// However, for the purposes of this code evaluation please mark the class itself public static.
 //
-//    ArrayList<Album> albums = new ArrayList<>();
-//     
+//Example input:
+//
 //    Album album = new Album("Stormbringer", "Deep Purple");
 //    album.addSong("Stormbringer", 4.6);
 //    album.addSong("Love don't mean a thing", 4.22);
@@ -109,19 +120,12 @@ public class Main {
 //    albums.get(0).addToPlayList("Holy man", playList);
 //    albums.get(0).addToPlayList("Speed king", playList);  // Does not exist
 //    albums.get(0).addToPlayList(9, playList);
+//    albums.get(1).addToPlayList(8, playList);
 //    albums.get(1).addToPlayList(3, playList);
 //    albums.get(1).addToPlayList(2, playList);
 //    albums.get(1).addToPlayList(24, playList);  // There is no track 24
 //
+//Example output:
 //
-//TIP:  In Album, use the findSong() method in addSong() and addToPlayList(String, LinkedList) to check if a song exists before proceeding.
-//TIP:  Be extremely careful with the spelling of the names of the fields, constructors and methods.
-//TIP:  Be extremely careful about spaces and spelling in the returned String from the toString() method.
-//
-//NOTE:  All fields are private.
-//NOTE:  All constructors are public.
-//NOTE:  All methods are public (except for findSong() which is private).
-//NOTE:  There are no static members.
-//NOTE:  Do not add a main method to the solution code.
-//NOTE:  If you get an error from the Evaluate class, it's most likely the constructor.
-// Check if you've added a constructor or if the constructor has the right arguments.
+//    The song Speed king is not in this album
+//    This album does not have a track 24
