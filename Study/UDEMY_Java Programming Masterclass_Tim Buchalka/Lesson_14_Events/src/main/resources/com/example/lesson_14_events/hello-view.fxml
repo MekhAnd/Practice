@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.CheckBox?>
+<GridPane alignment="CENTER" hgap="20.0" vgap="20.0" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.lesson_14_events.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <TextField fx:id="nameField" GridPane.rowIndex="0"
+               GridPane.columnIndex="1"
+               onKeyReleased="#handleKeyReleased"
+                GridPane.columnSpan="2"/>
+    <Button fx:id="helloButton" text="Say hello!" GridPane.rowIndex="1"
+            GridPane.columnIndex="0"
+            onAction="#onButtonClicked"/>
+    <Button fx:id="byeButton" text="Say Bye!" GridPane.rowIndex="1"
+            GridPane.columnIndex="1"
+            onAction="#onButtonClicked"/>
+    <CheckBox fx:id="checkBox" text="Clear the field after saying hello or bye" GridPane.rowIndex="2"
+              GridPane.columnIndex="0"
+              GridPane.columnSpan="2"
+    onAction="#handleChange"/>
+    <Label fx:id="ourLabel" text="Nothing has happend"
+           GridPane.rowIndex="3"
+           GridPane.columnIndex="0"
+           />
+
+
+</GridPane>

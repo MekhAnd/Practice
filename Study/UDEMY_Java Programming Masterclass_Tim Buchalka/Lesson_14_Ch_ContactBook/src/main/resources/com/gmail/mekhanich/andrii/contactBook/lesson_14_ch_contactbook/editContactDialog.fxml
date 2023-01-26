@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.gmail.mekhanich.andrii.contactBook.lesson_14_ch_contactbook.EditContactDialogController"
+            prefHeight="250.0" prefWidth="350.0">
+
+    <headerText>
+        Here you can edit contact in your Contact book
+    </headerText>
+    <content>
+        <GridPane vgap = "10" hgap = "10">
+            <Label text="Last name" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="lastName" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="First name" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="firstName" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <Label text="Phone number" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="phoneNumber" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <Label text="E-mail" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextField fx:id="email" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+            <Label text="Group memeber" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextField fx:id="group" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+            <Label text="Notes" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <TextField fx:id="additionalInformation" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</DialogPane>

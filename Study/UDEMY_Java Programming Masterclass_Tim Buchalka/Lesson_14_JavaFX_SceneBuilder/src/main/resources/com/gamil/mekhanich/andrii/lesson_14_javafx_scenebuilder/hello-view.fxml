@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" stylesheets="@styles.css" vgap="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gamil.mekhanich.andrii.lesson_14_javafx_scenebuilder.HelloController">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <HBox spacing="5.0" GridPane.rowIndex="1">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleAction" prefHeight="36.0" prefWidth="63.0" text="Ok" textFill="WHITE" />
+            <Button mnemonicParsing="false" style="-fx-background-color: red;" text="Cancel" textFill="#f8f8f8" />
+            <Button mnemonicParsing="false" style="-fx-background-color: blue;" text="Help" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" />
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </HBox>
+      <Label fx:id="label" text="My label" />
+   </children>
+</GridPane>
