@@ -16,9 +16,12 @@ class UserController {
   async registration(req, res, next) {
     const { email, password, alias, role } = req.body;
 
+    console.log( email, password, alias, role);
+
     if (!email || !password) {
       return next(ApiError.badRequest("Incorrect e-mail or password"));
     }
+
     const currentUser = await User.findOne({ where: { email: email } });
     if (currentUser) {
       return next(
